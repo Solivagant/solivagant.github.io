@@ -90,7 +90,7 @@
     display: inline-block;
     padding: 10px;
     transition: all 0.1s ease-in-out;
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, 1);
 }
 .main-header.no-cover .social_link li a {
     color: rgba(0, 0, 0, 0.8);
@@ -116,6 +116,7 @@
 }
 .menu ul li a {
     border: rgba(255, 255, 255, 0.8) 1.5px solid;
+    background: rgba(0, 0, 0, 0.75);
     font-weight: 400;
     color: #9EABB3;
     text-align: center;
