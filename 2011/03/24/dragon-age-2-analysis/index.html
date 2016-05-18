@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>Dragon Age 2 - All the world is a stage</title>
+    <meta name="description" content="A Dragon Age 2 analysis - included in Critical Distance&#x27;s of BioWare&#x27;s Dragon Age 2" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="apple-touch-icon" sizes="57x57" href="../../../../assets/img/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../../../../assets/img/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../../../../assets/img/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../../../../assets/img/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../../../../assets/img/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../../../../assets/img/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../../../../assets/img/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../../../../assets/img/favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../../../assets/img/favicons/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="../../../../assets/img/favicons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="../../../../assets/img/favicons/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="../../../../assets/img/favicons/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="../../../../assets/img/favicons/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="https://solivagant.github.io/assets/img/favicons/manifest.json">
+    <link rel="mask-icon" href="../../../../assets/img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="../../../../assets/img/favicons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-TileImage" content="/assets/img/favicons/mstile-144x144.png">
+    <meta name="msapplication-config" content="/assets/img/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" type="text/css" href="../../../../assets/css/screen.css?v=de523119fa" />
+    <link rel="stylesheet" type="text/css" href="../../../../assets/css/custom.css?v=de523119fa" />
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../../../../assets/css/prism.css?v=de523119fa" />
+    <link rel="stylesheet" type="text/css" href="../../../../assets/css/rrssb.css?v=de523119fa" />
+
+    <link rel="canonical" href="index.html" />
+    <meta name="referrer" content="origin" />
+    
+    <meta property="og:site_name" content="Geraldo Nascimento" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Dragon Age 2 - All the world is a stage" />
+    <meta property="og:description" content="A Dragon Age 2 analysis - included in Critical Distance&#x27;s of BioWare&#x27;s Dragon Age 2" />
+    <meta property="og:url" content="https://solivagant.github.io/2011/03/24/dragon-age-2-analysis/" />
+    <meta property="og:image" content="https://solivagant.github.io/content/images/2016/05/Wallpaper_Dragon_Age_2_Hawke_and_Isabela.jpg" />
+    <meta property="article:published_time" content="2011-03-24T09:37:00.000Z" />
+    <meta property="article:modified_time" content="2016-05-18T09:57:59.868Z" />
+    <meta property="article:tag" content="gamedev" />
+    
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Dragon Age 2 - All the world is a stage" />
+    <meta name="twitter:description" content="A Dragon Age 2 analysis - included in Critical Distance&#x27;s of BioWare&#x27;s Dragon Age 2" />
+    <meta name="twitter:url" content="https://solivagant.github.io/2011/03/24/dragon-age-2-analysis/" />
+    <meta name="twitter:image:src" content="https://solivagant.github.io/content/images/2016/05/Wallpaper_Dragon_Age_2_Hawke_and_Isabela.jpg" />
+    <meta name="twitter:label1" content="Written by" />
+    <meta name="twitter:data1" content="Geraldo Nascimento" />
+    <meta name="twitter:label2" content="Filed under" />
+    <meta name="twitter:data2" content="gamedev" />
+    
+    <script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "publisher": "Geraldo Nascimento",
+    "author": {
+        "@type": "Person",
+        "name": "Geraldo Nascimento",
+        "image": "//www.gravatar.com/avatar/320f0443986998bd8970f4cd81541fc6?s=250&d=mm&r=x",
+        "url": "https://solivagant.github.io/author/geraldo/",
+        "description": "I&#x27;m a software engineer &amp; indie game developer, forging games amidst the crucible of creativity and excellent software writing practices. Follow me on Twitter @solivagant"
+    },
+    "headline": "Dragon Age 2 - All the world is a stage",
+    "url": "https://solivagant.github.io/2011/03/24/dragon-age-2-analysis/",
+    "datePublished": "2011-03-24T09:37:00.000Z",
+    "dateModified": "2016-05-18T09:57:59.868Z",
+    "image": "https://solivagant.github.io/content/images/2016/05/Wallpaper_Dragon_Age_2_Hawke_and_Isabela.jpg",
+    "keywords": "gamedev",
+    "description": "A Dragon Age 2 analysis - included in Critical Distance&#x27;s of BioWare&#x27;s Dragon Age 2"
+}
+    </script>
+
+    <meta name="generator" content="Ghost 0.7" />
+    <link rel="alternate" type="application/rss+xml" title="Geraldo Nascimento" href="../../../../rss/index.html" />
+    <script>
+// to enable Social Link Icons add the social_link object
+// with the pair key/value -> social_network/link
+// NB: the key is used to include the right icon from Font Awesome
+// (you can include any Font Awesome icon)
+
+// Example1: default social network icons
+var social_link = {
+    'twitter': 'https://twitter.com/solivagant',
+    'linkedin': 'https://it.linkedin.com/in/gnascim',
+    'github': 'https://github.com/solivagant',
+    'rss':'https://solivagant.github.io/rss/'
+    // you can add more icons
+}
+</script>
+</head>
+<body class="post-template tag-gamedev">
+
+
+    <div class="site-wrapper">
+
+        
+
+
+<header class="main-header post-head " style="background-image: url(../../../../content/images/2016/05/Wallpaper_Dragon_Age_2_Hawke_and_Isabela.jpg)">
+    <nav class="main-nav overlay clearfix">
+        <a class="back-button icon-arrow-left" href="../../../../index.html"> Home</a>
+        <a class="subscribe-button icon-feed" href="../../../../rss/index.html"> Subscribe</a>
+    </nav>
+</header>
+
+<main class="content" role="main">
+    <article class="post tag-gamedev">
+
+        <header class="post-header">
+            <h1 class="post-title">Dragon Age 2 analysis</h1>
+            <section class="post-meta">
+                <time class="post-date" datetime="2011-03-24">24 March 2011</time>  on <a href="../../../../tag/gamedev/index.html">gamedev</a>
+            </section>
+            <section class="social-share">
+                <ul class="rrssb-buttons clearfix">
+    <li class="rrssb-email">
+
+        <!-- Replace subject with your message using URL Endocding: http://meyerweb.com/eric/tools/dencoder/ -->
+        <a>
+            <span class="rrssb-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28">
+                    <path d="M20.11 26.147c-2.335 1.05-4.36 1.4-7.124 1.4C6.524 27.548.84 22.916.84 15.284.84 7.343 6.602.45 15.4.45c6.854 0 11.8 4.7 11.8 11.252 0 5.684-3.193 9.265-7.398 9.3-1.83 0-3.153-.934-3.347-2.997h-.077c-1.208 1.986-2.96 2.997-5.023 2.997-2.532 0-4.36-1.868-4.36-5.062 0-4.75 3.503-9.07 9.11-9.07 1.713 0 3.7.4 4.6.972l-1.17 7.203c-.387 2.298-.115 3.3 1 3.4 1.674 0 3.774-2.102 3.774-6.58 0-5.06-3.27-8.994-9.304-8.994C9.05 2.87 3.83 7.545 3.83 14.97c0 6.5 4.2 10.2 10 10.202 1.987 0 4.09-.43 5.647-1.245l.634 2.22zM16.647 10.1c-.31-.078-.7-.155-1.207-.155-2.572 0-4.596 2.53-4.596 5.53 0 1.5.7 2.4 1.9 2.4 1.44 0 2.96-1.83 3.31-4.088l.592-3.72z"
+                    />
+                </svg>
+            </span>
+            <span class="rrssb-text">email</span>
+        </a>
+    </li>
+
+    <li class="rrssb-twitter">
+        <!-- Replace href with your Meta and URL information  -->
+        <a href="https://twitter.com/intent/tweet?text=Ridiculously%20Responsive%20Social%20Sharing%20Buttons%20by%20%40dbox%20and%20%40joshuatuscan%3A%20http%3A%2F%2Fkurtnoble.com%2Flabs%2Frrssb%20%7C%20http%3A%2F%2Fkurtnoble.com%2Flabs%2Frrssb%2Fmedia%2Frrssb-preview.png"
+        class="popup">
+            <span class="rrssb-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28">
+                    <path d="M24.253 8.756C24.69 17.08 18.297 24.182 9.97 24.62c-3.122.162-6.22-.646-8.86-2.32 2.702.18 5.375-.648 7.507-2.32-2.072-.248-3.818-1.662-4.49-3.64.802.13 1.62.077 2.4-.154-2.482-.466-4.312-2.586-4.412-5.11.688.276 1.426.408 2.168.387-2.135-1.65-2.73-4.62-1.394-6.965C5.574 7.816 9.54 9.84 13.802 10.07c-.842-2.738.694-5.64 3.434-6.48 2.018-.624 4.212.043 5.546 1.682 1.186-.213 2.318-.662 3.33-1.317-.386 1.256-1.248 2.312-2.4 2.942 1.048-.106 2.07-.394 3.02-.85-.458 1.182-1.343 2.15-2.48 2.71z"
+                    />
+                </svg>
+            </span>
+            <span class="rrssb-text">twitter</span>
+        </a>
+    </li>
+
+    <li class="rrssb-facebook">
+        <!--  Replace with your URL. For best results, make sure you page has the proper FB Open Graph tags in header:
+              https://developers.facebook.com/docs/opengraph/howtos/maximizing-distribution-media-content/ -->
+        <a class="popup">
+            <span class="rrssb-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 29">
+                    <path d="M26.4 0H2.6C1.714 0 0 1.715 0 2.6v23.8c0 .884 1.715 2.6 2.6 2.6h12.393V17.988h-3.996v-3.98h3.997v-3.062c0-3.746 2.835-5.97 6.177-5.97 1.6 0 2.444.173 2.845.226v3.792H21.18c-1.817 0-2.156.9-2.156 2.168v2.847h5.045l-.66 3.978h-4.386V29H26.4c.884 0 2.6-1.716 2.6-2.6V2.6c0-.885-1.716-2.6-2.6-2.6z"
+                    />
+                </svg>
+            </span>
+            <span class="rrssb-text">facebook</span>
+        </a>
+    </li>
+
+    <li class="rrssb-linkedin">
+        <!-- Replace href with your meta and URL information -->
+        <a class="popup">
+            <span class="rrssb-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28">
+                    <path d="M25.424 15.887v8.447h-4.896v-7.882c0-1.98-.71-3.33-2.48-3.33-1.354 0-2.158.91-2.514 1.802-.13.315-.162.753-.162 1.194v8.216h-4.9s.067-13.35 0-14.73h4.9v2.087c-.01.017-.023.033-.033.05h.032v-.05c.65-1.002 1.812-2.435 4.414-2.435 3.222 0 5.638 2.106 5.638 6.632zM5.348 2.5c-1.676 0-2.772 1.093-2.772 2.54 0 1.42 1.066 2.538 2.717 2.546h.032c1.71 0 2.77-1.132 2.77-2.546C8.056 3.593 7.02 2.5 5.344 2.5h.005zm-2.48 21.834h4.896V9.604H2.867v14.73z"
+                    />
+                </svg>
+            </span>
+            <span class="rrssb-text">linkedin</span>
+        </a>
+    </li>
+
+
+    <li class="rrssb-reddit">
+        <a>
+            <span class="rrssb-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28">
+                    <path d="M11.794 15.316c0-1.03-.835-1.895-1.866-1.895-1.03 0-1.893.866-1.893 1.896s.863 1.9 1.9 1.9c1.023-.016 1.865-.916 1.865-1.9zM18.1 13.422c-1.03 0-1.895.864-1.895 1.895 0 1 .9 1.9 1.9 1.865 1.03 0 1.87-.836 1.87-1.865-.006-1.017-.875-1.917-1.875-1.895zM17.527 19.79c-.678.68-1.826 1.007-3.514 1.007h-.03c-1.686 0-2.834-.328-3.51-1.005-.264-.265-.693-.265-.958 0-.264.265-.264.7 0 1 .943.9 2.4 1.4 4.5 1.402.005 0 0 0 0 0 .005 0 0 0 0 0 2.066 0 3.527-.46 4.47-1.402.265-.264.265-.693.002-.958-.267-.334-.688-.334-.988-.043z"
+                    />
+                    <path d="M27.707 13.267c0-1.785-1.453-3.237-3.236-3.237-.792 0-1.517.287-2.08.76-2.04-1.294-4.647-2.068-7.44-2.218l1.484-4.69 4.062.955c.07 1.4 1.3 2.6 2.7 2.555 1.488 0 2.695-1.208 2.695-2.695C25.88 3.2 24.7 2 23.2 2c-1.06 0-1.98.616-2.42 1.508l-4.633-1.09c-.344-.082-.693.117-.803.454l-1.793 5.7C10.55 8.6 7.7 9.4 5.6 10.75c-.594-.45-1.3-.75-2.1-.72-1.785 0-3.237 1.45-3.237 3.2 0 1.1.6 2.1 1.4 2.69-.04.27-.06.55-.06.83 0 2.3 1.3 4.4 3.7 5.9 2.298 1.5 5.3 2.3 8.6 2.325 3.227 0 6.27-.825 8.57-2.325 2.387-1.56 3.7-3.66 3.7-5.917 0-.26-.016-.514-.05-.768.965-.465 1.577-1.565 1.577-2.698zm-4.52-9.912c.74 0 1.3.6 1.3 1.3 0 .738-.6 1.34-1.34 1.34s-1.343-.602-1.343-1.34c.04-.655.596-1.255 1.396-1.3zM1.646 13.3c0-1.038.845-1.882 1.883-1.882.31 0 .6.1.9.21-1.05.867-1.813 1.86-2.26 2.9-.338-.328-.57-.728-.57-1.26zm20.126 8.27c-2.082 1.357-4.863 2.105-7.83 2.105-2.968 0-5.748-.748-7.83-2.105-1.99-1.3-3.087-3-3.087-4.782 0-1.784 1.097-3.484 3.088-4.784 2.08-1.358 4.86-2.106 7.828-2.106 2.967 0 5.7.7 7.8 2.106 1.99 1.3 3.1 3 3.1 4.784C24.86 18.6 23.8 20.3 21.8 21.57zm4.014-6.97c-.432-1.084-1.19-2.095-2.244-2.977.273-.156.59-.245.928-.245 1.036 0 1.9.8 1.9 1.9-.016.522-.27 1.022-.57 1.327z"
+                    />
+                </svg>
+            </span>
+            <span class="rrssb-text">reddit</span>
+        </a>
+    </li>
+
+    <li class="rrssb-hackernews">
+        <a>
+            <span class="rrssb-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28">
+                    <path fill="#FFF" d="M14 13.626l-4.508-9.19H6.588l6.165 12.208v6.92h2.51v-6.92l6.15-12.21H18.69" />
+                </svg>
+            </span>
+            <span class="rrssb-text">hackernews</span>
+        </a>
+    </li>
+
+    <li class="rrssb-googleplus">
+        <!-- Replace href with your meta and URL information.  -->
+        <a class="popup">
+            <span class="rrssb-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path d="M21 8.29h-1.95v2.6h-2.6v1.82h2.6v2.6H21v-2.6h2.6v-1.885H21V8.29zM7.614 10.306v2.925h3.9c-.26 1.69-1.755 2.925-3.9 2.925-2.34 0-4.29-2.016-4.29-4.354s1.885-4.353 4.29-4.353c1.104 0 2.014.326 2.794 1.105l2.08-2.08c-1.3-1.17-2.924-1.883-4.874-1.883C3.65 4.586.4 7.835.4 11.8s3.25 7.212 7.214 7.212c4.224 0 6.953-2.988 6.953-7.082 0-.52-.065-1.104-.13-1.624H7.614z"
+                    />
+                </svg>
+            </span>
+            <span class="rrssb-text">google+</span>
+        </a>
+    </li>
+    <li class="rrssb-pocket">
+        <a>
+            <span class="rrssb-icon">
+                <svg width="32" height="28" viewBox="0 0 32 28" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M28.782.002c2.03.002 3.193 1.12 3.182 3.106-.022 3.57.17 7.16-.158 10.7-1.09 11.773-14.588 18.092-24.6 11.573C2.72 22.458.197 18.313.057 12.937c-.09-3.36-.05-6.72-.026-10.08C.04 1.113 1.212.016 3.02.008 7.347-.006 11.678.004 16.006.002c4.258 0 8.518-.004 12.776 0zM8.65 7.856c-1.262.135-1.99.57-2.357 1.476-.392.965-.115 1.81.606 2.496 2.453 2.334 4.91 4.664 7.398 6.966 1.086 1.003 2.237.99 3.314-.013 2.407-2.23 4.795-4.482 7.17-6.747 1.203-1.148 1.32-2.468.365-3.426-1.01-1.014-2.302-.933-3.558.245-1.596 1.497-3.222 2.965-4.75 4.526-.706.715-1.12.627-1.783-.034-1.597-1.596-3.25-3.138-4.93-4.644-.47-.42-1.123-.647-1.478-.844z"
+                    />
+                </svg>
+            </span>
+            <span class="rrssb-text">pocket</span>
+        </a>
+    </li>
+
+</ul>
+            </section>
+        </header>
+
+        <section class="post-content">
+            <p>The story of the Champion of Kirkwall is every medieval fantasy story I tried to write but never finished. The funny thing is I wasn't even intending to get Dragon Age 2.</p>
+
+<p><strong>WARNING: The following text contains spoilers. If you haven't played and finished Dragon Age 2, please do so before reading.</strong></p>
+
+<p>I'm very grateful to BioWare for creating this game. Dragon Age 2 is the game I dreamed up when I was eleven. Only I didn't imagine it as a game, since they weren't as mainstream like today.</p>
+
+<!--more-->
+
+<p>It was a succession of three curious signs that led me to purchase the game:</p>
+
+<p><strong>The Cover</strong>  </p>
+
+<p style="text-align: center;"><img class="size-large wp-image-131 aligncenter" title="AllMyFriends" src="http://i.imgur.com/S7Zv4.jpg" alt="All My Friends, the Cover of Dragon Age 2" width="540" height="454" /></p>  
+
+<p>The cover portrays Hawke, center stage as the Champion of Kirkwall, and around him are the shadows of those who helped him get there, his friends, his family and everyone else.</p>
+
+<p>It reminds me of the Hellblazer graphic novels. They tell the tale of Constantine, a cross between a demon summoner, a magician and a private eye. Hellblazer stories always end up with Constantine stuck between a rock and a hard place, but he always gets away.</p>
+
+<p>He uses his friends to thwart enemies. With the best of intentions he directs his most trusted friends towards the Devil himself. Most of the time they end up dead. Constantine's a downright bastard.</p>
+
+<p>Dragon Age 2's cover is reminiscent of the following Hellblazer covers:  </p>
+
+<p style="text-align: center;"><a href="http://i.imgur.com/mn3Be.jpg"><img class="aligncenter size-full wp-image-135" title="hellblazer-joyride" src="http://i.imgur.com/mn3Be.jpg" alt="" width="400" height="600" /></a><a href="http://i.imgur.com/HTN7l.jpg"><img class="aligncenter size-full wp-image-134" title="hb227" src="http://i.imgur.com/HTN7l.jpg" alt="" width="420" height="635" /></a><a href="http://i.imgur.com/dEUMN.jpg"><img class="aligncenter size-full wp-image-133" title="hb217" src="http://i.imgur.com/dEUMN.jpg" alt="" width="420" height="645" /></a></p>  
+
+<p style="text-align: left;">I think I'm not the only one to see the resemblance. I'm not saying Hellblazer's covers influenced BioWare, I say they share a thematic link.</p>  
+
+<p><strong>The Name</strong></p>
+
+<p>Practically all of my characters in RPGs are called <strong>Hawk</strong>. I've used that name since the first time I playeed Lord British's Ultima 7.</p>
+
+<p>It was with a sense of pride that I realized the main character in DA2 is called Hawke, the same name I use with all my characters. Yes, with an extra "e", but when someone says Hawke in game, it sounds just right. It evokes all of my previous characters, furthering my immersion in the game.</p>
+
+<p>It's the same technique BioWare used with the Mass Effect series: a fixed name for the main character so that the voice actors can enunciate it and thus strengthen the player's immersion. It worked for me.</p>
+
+<p>Selecting my favorite character name for their Champion really made me proud, even if it's just a coincidence. But it doesn't end there, because Hawke's first name is Garrett. Did BioWare choose it as a nod to the Thief series, whose titular character is Garrett, or simply because it's cool and sounds medieval? I don't know, but that happens to be another of the names I've used in my RPG play-throughs. Garrett Hawke it is then.</p>
+
+<p><strong>The Scope</strong></p>
+
+<p>When I read that the game told the 10 year long rise of Hawke to Champion-hood, I decided to buy the game. It's not often that an RPG tells such a long tale. The fact that it was told in one city didn't bother me, in fact it actually perked my interest further.</p>
+
+<p>The <strong>Cover</strong>, the <strong>Name</strong> and the <strong>Scope</strong>. Those were the reasons I bought Dragon Age 2. No other expectations. I had a pending Dragon Age: Origins play-through to finish. I did it in two days and started Dragon Age 2.  </p>
+
+<p style="text-align: center;"></p>  
+
+<p><strong>All the World is a Stage</strong></p>
+
+<p>After playing for 50 hours, I still haven't finished DA2. While playing, an idea has formed in my mind and I must share it with you.</p>
+
+<p>I think BioWare stood at a crossroads after releasing Dragon Age: Origins to universal appeal. Should they continue the legacy left behind by its elder self and bring Dragon Age closer to the aesthetic and ecosystem of Baldur's Gate? Riddle the sequel with more micromanagement and millions of loot items, spreading them abundantly in a vast but unseen landscape, its locales tied together by sluggish wandering pathways drawn on a cloth map?</p>
+
+<p>Or should they try something different, the road less traveled as put by Robert Frost?</p>
+
+<p>Dragon Age 2 is the road less traveled.</p>
+
+<p><strong>I posit the theory that Dragon Age 2 is a three-act stage play.</strong>  </p>
+
+<p style="text-align: center;"><strong><a href="http://i.imgur.com/1biYn.jpg"><img class="aligncenter size-full wp-image-169" title="2416100250_aa478b3496" src="http://i.imgur.com/1biYn.jpg" alt="" width="500" height="375" /></a></strong></p>  
+
+<p><strong> <br />
+</strong></p>
+
+<p>Our unreliable narrator is Varrick, his conversations with the Seeker of the Chantry acting as interludes to the story. They are the pair of performers setting the audience's mood in front of the curtain in between acts, commenting on the story being told.</p>
+
+<p>The main focus of this drama is the rise of Hawke as the Champion of Kirkwall. In order to tie the audience (<strong>us!</strong>) to this story, we get to choose how Hawke reacts and what things he should do in his adventures.</p>
+
+<p>His three typical attitudes can be mixed and matched to reach a more personal character. Your choices in dialogue change Hawke's reactions during combat. My Hawke delivers perfectly timed one liners after battles end, because I continuously exuded a roguish charm. Hawke grows as the acts progress, gaining fame, notoriety, and his personality evolves from his humble beginnings in Lothering to become someone greater. Hopefully the audience grows as well.</p>
+
+<p>[caption id="attachment_150" align="aligncenter" width="540"]<a href="http://i.imgur.com/YG4Q8.jpg"><img class="size-large wp-image-150 " title="My Friends" src="http://i.imgur.com/YG4Q8.jpg" alt="" width="540" height="337" /></a> His family, his dog, his party members. Two of those aren't here.[/caption]</p>
+
+<p>Accompanying the main character are the secondary characters: <strong>his family</strong>, <strong>his dog</strong> and <strong>his party members</strong>. They'll act out dialogues with Hawke frequently and even chat between them while wandering the city and its outskirts. Sometimes Hawke might interfere, his quip matching the personality of your most frequent type of answer. They are the lifeblood of the play, for without them Hawke would be a lone wolf, his personality stagnant and known to no one.</p>
+
+<p>The characters of the play are given life by actors. The majority of them are merely extras, throwaway characters performing bit parts, and sometimes the same actor will play the same character more than once: I am sure I saw the actress that plays <strong>Leandra Amell</strong>, Hawke's Mother, more than once with a different wig. I have no problem with that, if the company couldn't afford more virtual actors, so be it.</p>
+
+<p>Voice actors however are plenty and infuse the characters with such personality that I, as an audience member, was completely enthralled. Adding to that, the actor's movements are definite, unique to the dialogue en scene. We actually see people get up and move about, thinking out loud. There's a verisimilitude to this body language that's rare, usually saved for cutscene intensive games and linear tales such as Uncharted 2.  </p>
+
+<p style="text-align: center;"><a href="http://i.imgur.com/KbYFH.jpg"><img class="aligncenter size-large wp-image-157" title="Doggy" src="http://i.imgur.com/KbYFH.jpg" alt="" width="540" height="337" /></a></p>  
+
+<p>I named the dog <strong>Doggy</strong>, my first dog's name. It was a joy to summon his help just to watch him about, biting and charging at our foes. Doggy's long gone by now, up in the doggy heaven, so naming Hawke's mabari Doggy really furthered my enjoyment of the game and reminded me of times gone by.</p>
+
+<p>[caption id="attachment_168" align="aligncenter" width="540"]<a href="http://i.imgur.com/0NbtZ.jpg"><img class="size-large wp-image-168 " title="Shrew-St Olaf College" src="http://i.imgur.com/0NbtZ.jpg" alt="" width="540" height="358" /></a> The stage. A single location that holds all the events of the play.[/caption]</p>
+
+<p>A play is performed in a variety of sets that serve as backdrop to the scenes being enacted. They set the mood. Most of the time the actors don't interact with them, and the director will even reuse these sets for various purposes.</p>
+
+<p>Sometimes they're retouched as the play is enacted, lighted differently to portray day, night or dusk, or even to illustrate different agendas, like red for a villain's lair and blue or white for innocent heroes.</p>
+
+<p>In the play of Dragon Age 2, each stage represents a conceptual location: The Wounded Coast, A Cave, A Nobleman's House, An Underground Town among others. These scenarios are populated by myriads of extras and tertiary characters. This small number of different locations hosts such varied creatures as dragons and abominations and various groups of people, such as slavers, templars, apostate mages and guards.</p>
+
+<p>Several scenes are carried out on this small number of stages. At some point in the play, you might find a robbery in the Wounded Coast, and later on perhaps a quiet stroll with Guardsman Aveline on the same location, and in between the rescuing of apostate mages, in the same location. Such is the way theater works.</p>
+
+<p>The city vistas resemble matte paintings, like in old movies, billowing clouds of smoke in the distance, a fire's ashes floating in the air. It's a delight to look at.  </p>
+
+<p style="text-align: center;"><a href="http://i.imgur.com/0TmnG.jpg"><img class="aligncenter size-large wp-image-161" title="Vistas Foundry" src="http://i.imgur.com/0TmnG.jpg" alt="" width="540" height="337" /></a></p>  
+
+<p>You'll see these stages frequently, perhaps even grow bored of them, but the events in them depicted are never recycled. That is what matters.</p>
+
+<p>The playwrights were no doubt entranced by this story and this world. I am certain their desire was to tell more stories, to portray more events in this story, to provide a larger canvas in which to paint Hawke's and his entourage's character progression. Like the playwrights of a theater company of low means, guided by principles and passions, they had instilled in them a desire to perform one more scene and damned be the owner if there's no money nor time nor people to make more sets.</p>
+
+<p>A theater performance is incomplete without costumes and props. The costume designers of BioWare are to be commended for their work, from Hawke's comfortable robes he wears while in his estate to the pointed and dangerous armors and the distinguished trappings of his friends. The party member's clothes even have names, like Isabela's Threads of the Seven Seas.</p>
+
+<p>There's a reason your party members won't just change into whatever other gear you can find. They have their own mind, and the actors performing them can be recognized better if their clothes are not changed every other hour. This holds especially true during the rapid-fire acrobatic sequences of combat that punctuate the play.</p>
+
+<p>[caption id="attachment_176" align="aligncenter" width="540"]<a href="http://i.imgur.com/2xebe.jpg"><img class="size-large wp-image-176 " title="2011-03-24_00051" src="http://i.imgur.com/2xebe.jpg" alt="" width="540" height="337" /></a> Isabela's "All Hands on Deck". She splits into silhouettes and strikes a group of enemies.[/caption]</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>It's worth to mention that combat is frenetic, fast-paced and it's still tactical. Yes, it's tactical and strategic.</p>
+
+<p>Concerning props, not everything you find has to be described in full. You don't complain if the prop an actor is using in a stage play doesn't look at all like it should. The actors aren't going to brandish steel swords in a live set! The only purpose of the prop is to resemble an item and to aid the actor in his enactment. This is the fate of the junk loot you find spread about, its only purpose is to provide a bit of flavour during your adventures. They are meant to be sold, and nothing more. You can even add items to the junk pot, so that it's easy to sell it all when you're next to a vendor.</p>
+
+<p>Junk loot allowed BioWare to further the concept of gifts. There aren't many gifts, but Hawke will know who he should give it to immediately and gifting them is a quest and a chance to further his relationship with his friends even more.</p>
+
+<p>Take for instance a gift meant for Aveline, one of the game's best characters. The gift, The Shield of the Knight Herself, sports her namesake and naturally Hawke decides to give it to her. Her reaction is charming and bewildering. She starts an argument with Hawke because the shield doesn't mean anything to her. In my play-through she accepted it reluctantly and the shield is actually something I can equip on her. It's really an item in game. It's not just a trinket meant to augment the artificial bar that portrays our relationship. That made so much sense to me while playing!</p>
+
+<p><strong>My  Performance</strong></p>
+
+<p>The performance of the actors in this play has been incredible, particularly Hawke's companions. I acted out Hawke has best I could, but the consequences were almost never pleasing. I selected the default Garrett Hawke face and went with Rogue, my favorite class in any game (even though it wasn't very good in Origins).</p>
+
+<p>The most commendable part about my <strong>actions</strong> isn't that they had <strong>consequences</strong>, but that <strong>I didn't notice making them</strong>. I interacted with characters, conversed with them, presented my opinions and acted upon them, and then things just happened and I couldn't go back.</p>
+
+<p>When I realized the consequences of my actions, it was too late. The Witcher also had this delayed effect, but there the choices were plain to see and few in number. They were explicit: do this or do that, and then something will happen later on. Not in Dragon Age 2.</p>
+
+<p><strong>WARNING: The spoilers will go in full swing now. What follows is my perspective on major events of the game.</strong></p>
+
+<p>I am Garrett Hawke.</p>
+
+<p>It is now the 40th hour of gameplay and I stand at the brink of the third act.</p>
+
+<p>My family is dead.</p>
+
+<p>Carver, my brother, died during our escape of Lothering. I had no choice in the matter. It was, in hindsight, a warning. A warning I ignored.</p>
+
+<p>I took Bethany, my sister, to the Deep Roads, despite the pleadings of my mother not to. I trusted myself and Varrick and Isabela, the friends I took with me. She died, victim of darkspawn poisoning. I had to assist her suicide to relieve her of the pain of living on as Darkspawn. It affected me, but not as much as what followed.</p>
+
+<p>Some time afterwards, I bedded Isabela, starting what I thought was a serious relationship. Fast enough she dismissed such notion from my mind, but I believed she would turn around.</p>
+
+<hr />
+
+<p>Years later, Kirkwall is being harassed by a serial killer. The only clue is his trademark sign: he sends lillies to his victims before kidnapping them.</p>
+
+<p>The templar Emeric aided me in finding a man that was engaging in suspicious behaviour. I met this suspect and had him surrounded.</p>
+
+<p>This man provided a suitable explanation for his actions. It fit within the conflict between Templar and Apostate Mage. He was using blood magic to track the killer, and couldn't do so openly. He resorted to kidnapping potential targets of the serial killer and extracting their blood. Again, thinking about this, years later, it didn't make much sense. But at the time it sounded right.</p>
+
+<p>Faced with the choice of killing him or letting him go, I pondered and let him go. I was expecting an immediate consequence that would tell me I had chosen poorly. However, as a real actor would, he performed his part and setup up a meeting to go after the real killer. I felt Hawke made the right choice.</p>
+
+<p>When I arrive at our meeting point, the curtain rises and I am revealed for what I am: a fool.</p>
+
+<p>Emeric is dead. The man I had met earlier WAS the serial killer and I let him go. The actor performed his part and fooled me, convincing me of his innocence. My usual flamboyant self began to change. I would no longer retort with a joke. I was enraged.</p>
+
+<hr />
+
+<p>Time passed. The conflict between the Qunari and the city of Kirkwall augmented. War might be declared in days. Yet, there was still one more turn before those events.</p>
+
+<p>I was returning to my estate after ending some quests. Something was odd.</p>
+
+<p>My mother was missing. She received lillies.</p>
+
+<p>My heart clenched. The game made me appreciate Leandra Amell's company over the years. I never thought she would be in danger, because she was always at home. I was still grieving the empty spot that Bethany had left in the party selection screen!</p>
+
+<p>I realized I had been wronged.</p>
+
+<p>A boy claimed to have seen a woman matching her description.  </p>
+
+<p style="text-align: center;"><a href="http://i.imgur.com/tKeMr.jpg"><img class="aligncenter size-large wp-image-163" title="The BOy" src="http://i.imgur.com/tKeMr.jpg" alt="" width="540" height="337" /></a></p>  
+
+<p>I offered to buy him new shoes for more information. This encounter reminded me of Deus Ex, when one JC Denton gave a soy pack to a young chinese boy in exchange for information. It was a nice touch.</p>
+
+<p>He led me to a blood trail. I was afraid.</p>
+
+<p>I followed the blood trail to an underground tunnel.</p>
+
+<p>After what seemed hours of chasing a red blood trail, I found three dead women. None of them my mother. I was still hoping.</p>
+
+<p>And then...</p>
+
+<p>And then I was forced to see the error of my ways. I was forced to see the terror of blood magic and demonic possession first hand. My Mother...</p>
+
+<p>I was forced to peer into Mother's eyes and say goodbye. She died in the most horrible way imaginable. I was broken. Like Bethany, she died because of me. I had the serial killer in my grasp, and I let him go! The payback was terrible. I blamed myself.</p>
+
+<p>My estate is now empty, apart from the endearing Bodhan and his adopted son Sandal. And Doggy.</p>
+
+<p>I was alone for the first time in the game.</p>
+
+<p>[caption id="attachment_156" align="aligncenter" width="540"]<a href="http://i.imgur.com/KMY0H.jpg"><img class="size-large wp-image-156 " title="Alone in my Estate" src="http://i.imgur.com/KMY0H.jpg" alt="" width="540" height="337" /></a> Alone. With Doggy.[/caption]</p>
+
+<p>*</p>
+
+<p>*</p>
+
+<p>*</p>
+
+<p>It is now the 50th hour of gameplay.</p>
+
+<p>My choices were not always the best ones. I was now the lone scion of the Hawke family. My mother was dead, and her death has affected me over the years.</p>
+
+<p>I have saved Kirkwall from decimation. I won Isabela's love.</p>
+
+<p>I am Garrett Hawke, Champion of Kirkwall.</p>
+
+<p><strong>Epilogue</strong></p>
+
+<p>There is a lot more to this game that I haven't mentioned here. Mother's death was the direct consequence of my failure at the serial killer's home. It was that chain reaction that led me to write this. The event would tint the remainder of my playthrough.</p>
+
+<p>As a gamer, I'm astonished. Hawke's life was difficult but it was fascinating to play it.</p>
+
+<p>Thank you BioWare.  </p>
+
+<pre>All screenshots were taken by me using Steam's screenshot utility.
+If you want to know more about Hellblazer go <a href="http://www.insanerantings.com/hell/index1.html" target="_blank">Straight to Hell</a>.
+Theater pictures taken from <a href="http://www.flickr.com/photos/87166482@N00/2416100250/" target="_blank">here</a> and <a href="http://www.foamdepot.com/Catering_Industry.htm" target="_blank">here</a>.</pre>
+        </section>
+
+        <section class="social-share">
+            <ul class="rrssb-buttons clearfix">
+    <li class="rrssb-email">
+
+        <!-- Replace subject with your message using URL Endocding: http://meyerweb.com/eric/tools/dencoder/ -->
+        <a>
+            <span class="rrssb-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28">
+                    <path d="M20.11 26.147c-2.335 1.05-4.36 1.4-7.124 1.4C6.524 27.548.84 22.916.84 15.284.84 7.343 6.602.45 15.4.45c6.854 0 11.8 4.7 11.8 11.252 0 5.684-3.193 9.265-7.398 9.3-1.83 0-3.153-.934-3.347-2.997h-.077c-1.208 1.986-2.96 2.997-5.023 2.997-2.532 0-4.36-1.868-4.36-5.062 0-4.75 3.503-9.07 9.11-9.07 1.713 0 3.7.4 4.6.972l-1.17 7.203c-.387 2.298-.115 3.3 1 3.4 1.674 0 3.774-2.102 3.774-6.58 0-5.06-3.27-8.994-9.304-8.994C9.05 2.87 3.83 7.545 3.83 14.97c0 6.5 4.2 10.2 10 10.202 1.987 0 4.09-.43 5.647-1.245l.634 2.22zM16.647 10.1c-.31-.078-.7-.155-1.207-.155-2.572 0-4.596 2.53-4.596 5.53 0 1.5.7 2.4 1.9 2.4 1.44 0 2.96-1.83 3.31-4.088l.592-3.72z"
+                    />
+                </svg>
+            </span>
+            <span class="rrssb-text">email</span>
+        </a>
+    </li>
+
+    <li class="rrssb-twitter">
+        <!-- Replace href with your Meta and URL information  -->
+        <a href="https://twitter.com/intent/tweet?text=Ridiculously%20Responsive%20Social%20Sharing%20Buttons%20by%20%40dbox%20and%20%40joshuatuscan%3A%20http%3A%2F%2Fkurtnoble.com%2Flabs%2Frrssb%20%7C%20http%3A%2F%2Fkurtnoble.com%2Flabs%2Frrssb%2Fmedia%2Frrssb-preview.png"
+        class="popup">
+            <span class="rrssb-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28">
+                    <path d="M24.253 8.756C24.69 17.08 18.297 24.182 9.97 24.62c-3.122.162-6.22-.646-8.86-2.32 2.702.18 5.375-.648 7.507-2.32-2.072-.248-3.818-1.662-4.49-3.64.802.13 1.62.077 2.4-.154-2.482-.466-4.312-2.586-4.412-5.11.688.276 1.426.408 2.168.387-2.135-1.65-2.73-4.62-1.394-6.965C5.574 7.816 9.54 9.84 13.802 10.07c-.842-2.738.694-5.64 3.434-6.48 2.018-.624 4.212.043 5.546 1.682 1.186-.213 2.318-.662 3.33-1.317-.386 1.256-1.248 2.312-2.4 2.942 1.048-.106 2.07-.394 3.02-.85-.458 1.182-1.343 2.15-2.48 2.71z"
+                    />
+                </svg>
+            </span>
+            <span class="rrssb-text">twitter</span>
+        </a>
+    </li>
+
+    <li class="rrssb-facebook">
+        <!--  Replace with your URL. For best results, make sure you page has the proper FB Open Graph tags in header:
+              https://developers.facebook.com/docs/opengraph/howtos/maximizing-distribution-media-content/ -->
+        <a class="popup">
+            <span class="rrssb-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 29">
+                    <path d="M26.4 0H2.6C1.714 0 0 1.715 0 2.6v23.8c0 .884 1.715 2.6 2.6 2.6h12.393V17.988h-3.996v-3.98h3.997v-3.062c0-3.746 2.835-5.97 6.177-5.97 1.6 0 2.444.173 2.845.226v3.792H21.18c-1.817 0-2.156.9-2.156 2.168v2.847h5.045l-.66 3.978h-4.386V29H26.4c.884 0 2.6-1.716 2.6-2.6V2.6c0-.885-1.716-2.6-2.6-2.6z"
+                    />
+                </svg>
+            </span>
+            <span class="rrssb-text">facebook</span>
+        </a>
+    </li>
+
+    <li class="rrssb-linkedin">
+        <!-- Replace href with your meta and URL information -->
+        <a class="popup">
+            <span class="rrssb-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28">
+                    <path d="M25.424 15.887v8.447h-4.896v-7.882c0-1.98-.71-3.33-2.48-3.33-1.354 0-2.158.91-2.514 1.802-.13.315-.162.753-.162 1.194v8.216h-4.9s.067-13.35 0-14.73h4.9v2.087c-.01.017-.023.033-.033.05h.032v-.05c.65-1.002 1.812-2.435 4.414-2.435 3.222 0 5.638 2.106 5.638 6.632zM5.348 2.5c-1.676 0-2.772 1.093-2.772 2.54 0 1.42 1.066 2.538 2.717 2.546h.032c1.71 0 2.77-1.132 2.77-2.546C8.056 3.593 7.02 2.5 5.344 2.5h.005zm-2.48 21.834h4.896V9.604H2.867v14.73z"
+                    />
+                </svg>
+            </span>
+            <span class="rrssb-text">linkedin</span>
+        </a>
+    </li>
+
+
+    <li class="rrssb-reddit">
+        <a>
+            <span class="rrssb-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28">
+                    <path d="M11.794 15.316c0-1.03-.835-1.895-1.866-1.895-1.03 0-1.893.866-1.893 1.896s.863 1.9 1.9 1.9c1.023-.016 1.865-.916 1.865-1.9zM18.1 13.422c-1.03 0-1.895.864-1.895 1.895 0 1 .9 1.9 1.9 1.865 1.03 0 1.87-.836 1.87-1.865-.006-1.017-.875-1.917-1.875-1.895zM17.527 19.79c-.678.68-1.826 1.007-3.514 1.007h-.03c-1.686 0-2.834-.328-3.51-1.005-.264-.265-.693-.265-.958 0-.264.265-.264.7 0 1 .943.9 2.4 1.4 4.5 1.402.005 0 0 0 0 0 .005 0 0 0 0 0 2.066 0 3.527-.46 4.47-1.402.265-.264.265-.693.002-.958-.267-.334-.688-.334-.988-.043z"
+                    />
+                    <path d="M27.707 13.267c0-1.785-1.453-3.237-3.236-3.237-.792 0-1.517.287-2.08.76-2.04-1.294-4.647-2.068-7.44-2.218l1.484-4.69 4.062.955c.07 1.4 1.3 2.6 2.7 2.555 1.488 0 2.695-1.208 2.695-2.695C25.88 3.2 24.7 2 23.2 2c-1.06 0-1.98.616-2.42 1.508l-4.633-1.09c-.344-.082-.693.117-.803.454l-1.793 5.7C10.55 8.6 7.7 9.4 5.6 10.75c-.594-.45-1.3-.75-2.1-.72-1.785 0-3.237 1.45-3.237 3.2 0 1.1.6 2.1 1.4 2.69-.04.27-.06.55-.06.83 0 2.3 1.3 4.4 3.7 5.9 2.298 1.5 5.3 2.3 8.6 2.325 3.227 0 6.27-.825 8.57-2.325 2.387-1.56 3.7-3.66 3.7-5.917 0-.26-.016-.514-.05-.768.965-.465 1.577-1.565 1.577-2.698zm-4.52-9.912c.74 0 1.3.6 1.3 1.3 0 .738-.6 1.34-1.34 1.34s-1.343-.602-1.343-1.34c.04-.655.596-1.255 1.396-1.3zM1.646 13.3c0-1.038.845-1.882 1.883-1.882.31 0 .6.1.9.21-1.05.867-1.813 1.86-2.26 2.9-.338-.328-.57-.728-.57-1.26zm20.126 8.27c-2.082 1.357-4.863 2.105-7.83 2.105-2.968 0-5.748-.748-7.83-2.105-1.99-1.3-3.087-3-3.087-4.782 0-1.784 1.097-3.484 3.088-4.784 2.08-1.358 4.86-2.106 7.828-2.106 2.967 0 5.7.7 7.8 2.106 1.99 1.3 3.1 3 3.1 4.784C24.86 18.6 23.8 20.3 21.8 21.57zm4.014-6.97c-.432-1.084-1.19-2.095-2.244-2.977.273-.156.59-.245.928-.245 1.036 0 1.9.8 1.9 1.9-.016.522-.27 1.022-.57 1.327z"
+                    />
+                </svg>
+            </span>
+            <span class="rrssb-text">reddit</span>
+        </a>
+    </li>
+
+    <li class="rrssb-hackernews">
+        <a>
+            <span class="rrssb-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28">
+                    <path fill="#FFF" d="M14 13.626l-4.508-9.19H6.588l6.165 12.208v6.92h2.51v-6.92l6.15-12.21H18.69" />
+                </svg>
+            </span>
+            <span class="rrssb-text">hackernews</span>
+        </a>
+    </li>
+
+    <li class="rrssb-googleplus">
+        <!-- Replace href with your meta and URL information.  -->
+        <a class="popup">
+            <span class="rrssb-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path d="M21 8.29h-1.95v2.6h-2.6v1.82h2.6v2.6H21v-2.6h2.6v-1.885H21V8.29zM7.614 10.306v2.925h3.9c-.26 1.69-1.755 2.925-3.9 2.925-2.34 0-4.29-2.016-4.29-4.354s1.885-4.353 4.29-4.353c1.104 0 2.014.326 2.794 1.105l2.08-2.08c-1.3-1.17-2.924-1.883-4.874-1.883C3.65 4.586.4 7.835.4 11.8s3.25 7.212 7.214 7.212c4.224 0 6.953-2.988 6.953-7.082 0-.52-.065-1.104-.13-1.624H7.614z"
+                    />
+                </svg>
+            </span>
+            <span class="rrssb-text">google+</span>
+        </a>
+    </li>
+    <li class="rrssb-pocket">
+        <a>
+            <span class="rrssb-icon">
+                <svg width="32" height="28" viewBox="0 0 32 28" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M28.782.002c2.03.002 3.193 1.12 3.182 3.106-.022 3.57.17 7.16-.158 10.7-1.09 11.773-14.588 18.092-24.6 11.573C2.72 22.458.197 18.313.057 12.937c-.09-3.36-.05-6.72-.026-10.08C.04 1.113 1.212.016 3.02.008 7.347-.006 11.678.004 16.006.002c4.258 0 8.518-.004 12.776 0zM8.65 7.856c-1.262.135-1.99.57-2.357 1.476-.392.965-.115 1.81.606 2.496 2.453 2.334 4.91 4.664 7.398 6.966 1.086 1.003 2.237.99 3.314-.013 2.407-2.23 4.795-4.482 7.17-6.747 1.203-1.148 1.32-2.468.365-3.426-1.01-1.014-2.302-.933-3.558.245-1.596 1.497-3.222 2.965-4.75 4.526-.706.715-1.12.627-1.783-.034-1.597-1.596-3.25-3.138-4.93-4.644-.47-.42-1.123-.647-1.478-.844z"
+                    />
+                </svg>
+            </span>
+            <span class="rrssb-text">pocket</span>
+        </a>
+    </li>
+
+</ul>
+        </section>
+
+        <footer class="post-footer">
+
+
+            <figure class="author-image">
+                <a class="img" href="../../../../author/geraldo/index.html" style="background-image: url(http://www.gravatar.com/avatar/320f0443986998bd8970f4cd81541fc6?s=250&amp;d=mm&amp;r=x)"><span class="hidden">Geraldo Nascimento's Picture</span></a>
+            </figure>
+
+            <section class="author">
+                <h4><a href="../../../../author/geraldo/index.html">Geraldo Nascimento</a></h4>
+
+                    <p>I&#x27;m a software engineer &amp; indie game developer, forging games amidst the crucible of creativity and excellent software writing practices. Follow me on Twitter @solivagant</p>
+                <div class="author-meta">
+                    <span class="author-location icon-location">London, UK</span>
+                    
+                </div>
+            </section>
+
+
+
+
+        <section class="post-comments">
+              <div id="disqus_thread"></div>
+              <script type="text/javascript">
+              // required: replace example with your forum shortname
+              if(disqus_shortname && typeof disqus_shortname === "string") {
+                  var disqus_identifier = '';
+
+                  /* * * DON'T EDIT BELOW THIS LINE * * */
+                  (function() {
+                  var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                  dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                  })();
+              }
+              </script>
+              <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        </section>
+
+        </footer>
+
+    </article>
+</main>
+
+<aside class="read-next">
+    <a class="read-next-story " style="background-image: url(../../../../content/images/2016/05/unnamed-1.jpg)" href="../../25/sword-sworcery-how-5-people-managed-to-hijack-the-world/index.html">
+        <section class="post">
+            <h2>Sword &amp; Sworcery: How 5 people managed to hijack the world</h2>
+            <p>I have now told this tale at least 10 times in real life. Each time it gets more interesting.&hellip;</p>
+        </section>
+    </a>
+</aside>
+
+
+
+
+        <footer class="site-footer clearfix">
+            <section class="copyright"><a href="../../../../index.html">Geraldo Nascimento</a> &copy; 2016</section>
+            <section class="poweredby"><a href="https://github.com/h4t0n/odin">Odin</a> theme created by Andrea Tarquini (<a href="https://twitter.com/h4t0n">@h4t0n</a>). Proudly published with <a href="https://ghost.org">Ghost</a></section>
+        </footer>
+
+    </div>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    
+
+    <script type="text/javascript" src="../../../../assets/js/jquery.fitvids.js?v=de523119fa"></script>
+    <script type="text/javascript" src="../../../../assets/js/index.js?v=de523119fa"></script>
+    <script type="text/javascript" src="../../../../assets/js/prism.js?v=de523119fa"></script>
+    <script type="text/javascript" src="../../../../assets/js/rrssb.min.js?v=de523119fa"></script>
+
+    <script type="text/javascript">
+        jQuery(document).ready(function($) {
+
+            $('.rrssb-buttons').rrssb({
+                // required:
+                title: 'Dragon Age 2 analysis',
+                url: 'https://solivagant.github.io/2011/03/24/dragon-age-2-analysis/',
+
+                // optional:
+                 description: 'Dragon Age 2 analysis',
+                // emailBody: 'Usually email body is just the description + url, but you can customize it if you want'
+            });
+
+        });
+    </script>
+
+    <script>
+        // TO ACTIVATE ADD var ga_id = "your_ga_id" to ghost code injection header
+        if (window.ga_id) {
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+            ga('create', window.ga_id, 'auto');
+            ga('require', 'linkid', 'linkid.js');
+            ga('send', 'pageview');
+        }
+    </script>
+
+    <script>
+        if(window.social_link){
+            var url_regexp = /^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$/
+            $.each(window.social_link,function(type, url){
+                if(typeof url ==="string" && url_regexp.test(url)){
+                    $('<li>').append($('<a>',{
+                                        html: '<i class="fa fa-'+type+'"></i>',
+                                        title: type,
+                                        href: url,
+                                        target: "_blank"
+                                    })
+                                ).appendTo('.social_link');
+
+                }
+            })
+        }
+    </script>
+
+</body>
+</html>
