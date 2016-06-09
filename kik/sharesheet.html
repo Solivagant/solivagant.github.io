@@ -20,10 +20,8 @@
 					typeof user.pic; // 'string'
 					typeof user.thumbnail; // 'string'
 
-					kik.send(user.username, {
-						title: 'Message title',
-						text: 'Message body',
-					});
+					kik.openConversation(user.username);
+
 				});
 			}
 		});
