@@ -8,7 +8,7 @@
 
 <script>
 	if (kik.enabled) {
-		kik.pickUsers(function(users) {
+		kik.pickUsers({filterSelf: false}, function(users) {
 			if (!users) {
 				// action was cancelled by user
 			} else {
