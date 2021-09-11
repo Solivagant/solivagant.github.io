@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Boost Bot</title>
+<link rel="kik-icon" href="kikicon.png">
+
+<script src="http://cdn.kik.com/kik/2.3.6/kik.js"></script>
+
+<script>
+	if (kik.enabled) {
+		kik.pickUsers({filterSelf: false}, function(users) {
+			if (!users) {
+				// action was cancelled by user
+			} else {
+				users.forEach(function(user) {
+					typeof user.username; // 'string'
+					typeof user.fullName; // 'string'
+					typeof user.firstName; // 'string'
+					typeof user.lastName; // 'string'
+					typeof user.pic; // 'string'
+					typeof user.thumbnail; // 'string'
+
+					kik.openConversation(user.username);
+
+				});
+			}
+		});
+	}
+</script>
+
+
+
+</body>
+</html>

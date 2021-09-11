@@ -1,0 +1,783 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:media="http://search.yahoo.com/mrss/"><channel><title><![CDATA[Geraldo Nascimento]]></title><description><![CDATA[Creative Game Engineering]]></description><link>https://solivagant.github.io/</link><generator>Ghost 0.7</generator><lastBuildDate>Wed, 18 May 2016 12:20:37 GMT</lastBuildDate><atom:link href="https://solivagant.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[2D Level editing in Unity]]></title><description><![CDATA[<p>My game, Gunkatana, the top down cyberpunk action game with lasers and katanas, is being built in Unity, starting off with Unity's 2D workflows and eventually settling with Unikron Software's fantastic <a href="http://www.2dtoolkit.com">2D Toolkit</a>.</p>
+
+<p><img src="https://solivagant.github.io/content/images/2016/05/levelediting.gif" alt=""></p>
+
+<p>For our first couple of builds, the artist who is building Gunkatana with me, <a href="http://www.crazyarcadia.com">CrazyArcadia</a>, would send</p>]]></description><link>https://solivagant.github.io/2016/05/18/level-editing/</link><guid isPermaLink="false">595b530f-9dde-4ebd-a19a-d752e83c84ff</guid><category><![CDATA[gunkatana]]></category><category><![CDATA[gamedev]]></category><category><![CDATA[unity]]></category><dc:creator><![CDATA[Geraldo Nascimento]]></dc:creator><pubDate>Wed, 18 May 2016 09:00:00 GMT</pubDate><media:content url="https://solivagant.github.io/content/images/2016/05/gunkatana_level_batou_street.png" medium="image"/><content:encoded><![CDATA[<img src="https://solivagant.github.io/content/images/2016/05/gunkatana_level_batou_street.png" alt="2D Level editing in Unity"><p>My game, Gunkatana, the top down cyberpunk action game with lasers and katanas, is being built in Unity, starting off with Unity's 2D workflows and eventually settling with Unikron Software's fantastic <a href="http://www.2dtoolkit.com">2D Toolkit</a>.</p>
+
+<p><img src="https://solivagant.github.io/content/images/2016/05/levelediting.gif" alt="2D Level editing in Unity"></p>
+
+<p>For our first couple of builds, the artist who is building Gunkatana with me, <a href="http://www.crazyarcadia.com">CrazyArcadia</a>, would send me pixel art layers of each level: the <strong>ground textures</strong>, the <strong>walls</strong>, the <strong>destructible decorations</strong>.</p>
+
+<p>I would put them together in a Unity Scene and then using UCLA Game Lab's <a href="http://games.ucla.edu/resource/unity-mesh-creator-2/">excellent mesh creation Unity tool</a> I'd generate the <strong>collision boxes</strong> for the walls, lasers barriers and other colliders of the level.</p>
+
+<p>Although the process works great, it's time consuming and doesn't really leverage the strengths of the Unity Editor.</p>
+
+<p>At around this time in Gunkatana's development story, the Unity UI was finally released. After getting to grips with it, I came up with a workflow to quickly draft 2D levels within Unity using the UI.</p>
+
+<p>I eventually moved on from using the UI to create levels because, ultimately, the only big feature I was using from the UI was tiling of the sprites.</p>
+
+<p>My next step was to add sprite tiling to the regular Unity2D sprites. I found an almost working solution, after a lot of gruelling work, but in the end abandoned it and just purchased 2DToolkit.</p>
+
+<p>Sometimes you just have to grab something off the shelf so you can get on with your creativity.</p>
+
+<p>Now I also take a part in the designing of the levels by drafting the layouts in advance, with tillable walls and grounds.</p>
+
+<p>This works for me but my process is always evolving as I learn more and as new tools are released.</p>]]></content:encoded></item><item><title><![CDATA[Static blog with GitHub Pages and Ghost]]></title><description><![CDATA[<p><a href="https://ghost.org">Ghost</a> is a fantastic open source blogging platform, with an easy to use Markdown Editor.</p>
+
+<p>I've had my blog hosted at their platform but have now moved to <a href="https://pages.github.com/">GitHub Pages</a>, for free.</p>
+
+<p>Combining a local installation of <strong>Ghost</strong> with <strong>GitHub Pages</strong> AND the tool <strong>Buster</strong> allows you to edit your</p>]]></description><link>https://solivagant.github.io/2016/05/06/static-blog-with-github-pages-and-ghost/</link><guid isPermaLink="false">96fe6fb4-2297-41ba-b73e-c9a61a36495c</guid><category><![CDATA[tutorial]]></category><dc:creator><![CDATA[Geraldo Nascimento]]></dc:creator><pubDate>Fri, 06 May 2016 11:22:13 GMT</pubDate><content:encoded><![CDATA[<p><a href="https://ghost.org">Ghost</a> is a fantastic open source blogging platform, with an easy to use Markdown Editor.</p>
+
+<p>I've had my blog hosted at their platform but have now moved to <a href="https://pages.github.com/">GitHub Pages</a>, for free.</p>
+
+<p>Combining a local installation of <strong>Ghost</strong> with <strong>GitHub Pages</strong> AND the tool <strong>Buster</strong> allows you to edit your blog locally, generate static pages and upload them to your GitHub hosted page.</p>
+
+<p>No fees and not even a Ghost user account to break as you'll always manage the blog locally and simply serve the static pages straight from <a href="https://github.com">GitHub</a>.</p>
+
+<p>If you're on a Mac like me, you will need:</p>
+
+<ul>
+<li><a href="https://nodejs.org/en/">Node</a></li>
+<li><a href="https://ghost.org/developers/">Ghost</a></li>
+<li><a href="http://brew.sh">brew</a></li>
+<li>pip</li>
+<li><a href="https://github.com/axitkhurana/buster">Buster</a></li>
+</ul>
+
+<p>I followed a number of guides to get there:</p>
+
+<ul>
+<li>Stefan Scherer's short and sweet <a href="https://stefanscherer.github.io/setup-ghost-for-github-pages/">instructions</a></li>
+<li>LedTechnica's <a href="http://ledtechnica.com/free-ghost-hosting-on-github-pages/">extensive guide</a></li>
+<li>Bonus: <a href="https://github.com/h4t0n/odin">Odin theme</a> for Ghost </li>
+</ul>
+
+<p>I had some issues with the correct version of Node to use, which <a href="http://stackoverflow.com/questions/7718313/how-to-change-to-an-older-version-of-node-js">led me to N</a>, a version manager for Node, so I could use <strong>v0.10.40</strong>.</p>]]></content:encoded></item><item><title><![CDATA[Dev Diary #5 - Steam Greenlight and the Journey to Kickstarter]]></title><description><![CDATA[<p>I bring you fantastic, joyful news. <strong>Gunkatana</strong> has been <a href="http://steamcommunity.com/sharedfiles/filedetails/?id=637591816"><strong>Greenlit</strong> on <strong>Steam</strong></a> after less than two weeks!</p>
+
+<p>I am ecstatic. Everyone on the team is really happy. But there's more!</p>
+
+<p>In the past day, more than <strong>700 people</strong> have downloaded the <a href="http://gamejolt.com/games/gunkatana/133872">pre-alpha build from <strong>GameJolt</strong></a>, after we landed on the</p>]]></description><link>https://solivagant.github.io/2016/03/25/dev-blog-5-the-journey-to-steam-greenlight/</link><guid isPermaLink="false">babbf024-3474-48fb-a8d5-0c5bf0404321</guid><category><![CDATA[unity]]></category><category><![CDATA[devdiary]]></category><category><![CDATA[gamedev]]></category><dc:creator><![CDATA[Geraldo Nascimento]]></dc:creator><pubDate>Fri, 25 Mar 2016 20:58:16 GMT</pubDate><media:content url="https://solivagant.github.io/content/images/2016/05/gunkatana_character_select.png" medium="image"/><content:encoded><![CDATA[<img src="https://solivagant.github.io/content/images/2016/05/gunkatana_character_select.png" alt="Dev Diary #5 - Steam Greenlight and the Journey to Kickstarter"><p>I bring you fantastic, joyful news. <strong>Gunkatana</strong> has been <a href="http://steamcommunity.com/sharedfiles/filedetails/?id=637591816"><strong>Greenlit</strong> on <strong>Steam</strong></a> after less than two weeks!</p>
+
+<p>I am ecstatic. Everyone on the team is really happy. But there's more!</p>
+
+<p>In the past day, more than <strong>700 people</strong> have downloaded the <a href="http://gamejolt.com/games/gunkatana/133872">pre-alpha build from <strong>GameJolt</strong></a>, after we landed on the first page as a <strong>GameJolt featured</strong> game!</p>
+
+<p>From that, we've already spotted two <strong>Youtuber</strong> Let's Play videos of Gunkatana:</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/maNcEH_LmPI" frameborder="0" allowfullscreen></iframe>
+
+<p><strong>MegaGWolf's</strong> take on the game is very positive and wonderful to hear. Watching as he discovers the mechanics of the game and really gets a blast of fun out of it, it's the reason we are doing this in the first place! BTW it was his idea to show that particular cyborg ninja on the thumbnail :p</p>
+
+<p>I'm making a note here: I'm really <strong>happy about this</strong>!</p>
+
+<p>And then we have <strong>l'academie du noob</strong>'s <a href="https://www.youtube.com/watch?v=8-DwbE3zTfI">gameplay video</a> in French. His feedback is also very positive, and points out all the things we know we must improve: better AI, and more modes, levels - it's all in the pipeline.</p>
+
+<p>Very soon we are going to be launching a <strong>Kickstarter</strong> campaign. We've been preparing it for the past few months, and we've got a wealth of things to show that we haven't yet.</p>
+
+<p>The <strong>pre-alpha build</strong>; getting on <strong>Steam Greenlight</strong>; they were our initial move - let's get this out there and see what happens.</p>
+
+<p>With Gunkatana already <strong>Greenlit</strong> going into the <strong>Kickstarter</strong> and extremely positive feedback from players, we are very confident, but we need your help!</p>
+
+<p>We've done a ton of work on <strong>Gunkatana</strong>'s official website - I'm incredibly proud of the work <strong>João Nascimento</strong> (not my brother, but one of my best friends!) has put into making our home on the web a place filled with all the information you need.</p>
+
+<p>Check it out here: <a href="http://gunkatana.com">www.gunkatana.com</a> </p>
+
+<p>Sign up there to get the latest updates on <strong>Gunkatana</strong>. If you like what you're seeing, we hope you'll like what's coming next!</p>
+
+<p>I have to give a shoutout to all the members of <strong>Team Gunkatana</strong>:</p>
+
+<ul>
+<li><p><strong>CrazyArcadia</strong> - for his continuous hard work on making the best pixel art, coming up with game design ideas off the cuff and discussing them on the fly, making the gorgeous <strong>THANK YOU GREENLIGHT COMMUNITY</strong> artwork we have posted everywhere now, and for being a <strong>freakin' BADASS</strong> - he made the city landscape flyover animation you see on the trailer in an incredibly short time!</p></li>
+<li><p><strong>João Nascimento</strong> - for crafting a fantastic website - and updating it on the fly, being available at all times, hitting us with his own perspective on the game, being someone me and everyone else on the team can always count on, his behind-the-scenes work on getting all the stuff we've shown so far - like getting all the <a href="http://steamcommunity.com/sharedfiles/filedetails/?id=637591816">Steam Greenlight</a>, <a href="https://torn-page.itch.io/gunkatana">itch.io</a>, <a href="http://www.indiedb.com/games/gunkatana">IndieDB</a> pages ready and helping out with the forum posts, and for being The Wrath!</p></li>
+<li><p><strong>Sarah Schemske</strong> - for creating with us a wonderful cyberpunk world we are very eager to explore, for adding depth to the story and triple-checking all the text we put out there (and for correcting the grammar!), and for coming up with fantastic ideas we can't wait to tell you about! You should read her atmospheric short stories set in the world of Gunkatana <a href="http://gunkatana.com/chronicles.html">at our site</a>!</p></li>
+</ul>
+
+<p>I thank <strong>Joonas Turner</strong> and <strong>Niilo Takalainen</strong> for the brutal sound design we have on the pre-alpha build already. Can't wait to get them to make more crunchy sounds! A big thanks also to <strong>Miriam Grohmann</strong> for creating the trailer after me and <strong>João</strong> tried our hand at it - and ending up in pain (Adobe Premiere is much harder than we tought)!</p>
+
+<p>I have to thank <strong>Electric Cafe</strong> as well for the retrowave pumping music they keep making for the game.</p>
+
+<p>You can check out a sample here:  </p>
+
+<iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/251325722&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+
+<p>You haven't seen any of <strong>Marco Machado</strong>'s art for the game yet, but you won't have to wait much longer. Really looking forward to unleashing it all on you very soon!</p>
+
+<p>Thank you all for your support and look out for our <strong>Kickstarter</strong> coming soon!</p>
+
+<p><strong>Follow Gunkatana on</strong>:</p>
+
+<p><a href="http://steamcommunity.com/sharedfiles/filedetails/?id=637591816">Steam Greenlight</a></p>
+
+<p><a href="http://gamejolt.com/games/gunkatana/133872">GameJolt</a></p>
+
+<p><a href="http://gunkatana.com">Official Site</a></p>]]></content:encoded></item><item><title><![CDATA[Dev Diary #4 - The Gunkatana Team]]></title><description><![CDATA[Who are the people behind Gunkatana?]]></description><link>https://solivagant.github.io/2016/03/14/dev-blog-4-the-team/</link><guid isPermaLink="false">ba618f79-ffd0-4160-a36d-694a97343915</guid><category><![CDATA[unity]]></category><category><![CDATA[devdiary]]></category><category><![CDATA[gamedev]]></category><dc:creator><![CDATA[Geraldo Nascimento]]></dc:creator><pubDate>Mon, 14 Mar 2016 11:12:43 GMT</pubDate><media:content url="https://solivagant.github.io/content/images/2016/05/socmed_banner.png" medium="image"/><content:encoded><![CDATA[<iframe width="420" height="315" src="https://www.youtube.com/embed/FvmepmQxYAE" frameborder="0" allowfullscreen></iframe>
+
+<img src="https://solivagant.github.io/content/images/2016/05/socmed_banner.png" alt="Dev Diary #4 - The Gunkatana Team"><p>Gunkatana is my game in development, a celebration of style and bloodshed. "Easy to learn, hard to master" <strong>zero-sum combat</strong> with laser guns, swords, and our unique <em>TURBO-RAILS</em>, an ultraviolent take on skateboard <strong>grinding</strong>.</p>
+
+<h1 id="theteam">THE TEAM</h1>
+
+<p>So, now that you know what <strong>Gunkatana</strong> is, who the hell is making it?</p>
+
+<p>Me? I'm <strong>Geraldo</strong>, a game programmer from Portugal. I moved to the UK almost 4 years ago to follow my passion for these things we call video games, and in 2014 I created a prototype that eventually became <strong>Gunkatana</strong>.</p>
+
+<p>For this game, I'm inspired by movies like <strong>The Matrix</strong> and <strong>Kill Bill</strong> and by games like <strong>Hotline Miami</strong>, <strong>Grand Theft Auto</strong> and <strong>Towerfall</strong>. I relish on satisfying combat mechanics, the <em>weighty feel</em> of attacks and movements, and putting that into the game <em>has been a joy</em>.</p>
+
+<p>The most difficult part for me, but perhaps the most satisfying as well, is the disconnect between what I want to add to the game, and how well what's in my mind translates into the finished project. </p>
+
+<p>Toying around prototyping new combat and movement mechanics is something that really satisfies me, probably more so than adding "content".</p>
+
+<p>The second most difficult part comes from my career development, as I spent most of my time as a software engineer, solving problems, developing an incredibly useful array of skills for game making. But that came at the cost of not developing my creativity, at least in terms of making things and putting them out there for everyone to see (any software engineer / programmer will tell you that it requires a LOT of creativity, and I don't deny it!).</p>
+
+<p>So sometimes I struggle with going on with the project, considering if what I am doing is really worth doing at all, if it is worth bothering other people with. I'm sure everyone feels this as well, at a certain amount.</p>
+
+<p>That said, here we are, Gunkatana is on Steam Greenlight waiting for your votes, we've got a fantastic trailer (with the help of Miriam Ghromann) and our first playable build is out for people to check it out from the comfort of their homes.</p>
+
+<p>Initially a project solely by me and <strong>CrazyArcadia</strong>, we've since expanded the team: </p>
+
+<p><strong>Sarah Schemske</strong> is the project's writer, and she's fleshing out the personalities of our playable characters and the dystopian world where the game is set; </p>
+
+<p><strong>João Nascimento</strong> is our producer, which means he makes sure everything is on track, helps us get the game out into the open, and motivates us (it's no wonder we've nicknamed him <strong><em>The Wrath</em></strong>);</p>
+
+<p><strong>Marco Machado</strong>, artist, is creating something beautiful that we will be revealing in the coming weeks;</p>
+
+<p><strong>Joonas Turner</strong> and <strong>Niilo Takalainen</strong>, the sound designers behind Broforce, are crafting every katana slash and laser shot spark, and have also given us the first voice of Gunkatana in the form of our sarcastic in-game announcer;</p>
+
+<p><strong>Electric Cafe</strong>, the people behind Aqua Kitty and Rock Boshers retro soundtracks, are creating a retrowave soundtrack for the game, that you can already hear in our playable demo and in available samples at their Soundcloud.</p>
+
+<p>I wouldn't be here, working full time on this project, if it wasn't for them, and other friends who have helped us get it this far.</p>
+
+<p>Support us on <a href="http://steamcommunity.com/sharedfiles/filedetails/?id=637591816">Steam Greenlight</a>!</p>
+
+<p><a href="https://torn-page.itch.io/gunkatana">Download the pre-alpha build</a></p>]]></content:encoded></item><item><title><![CDATA[Dev Diary #3 - Drink your Juice]]></title><description><![CDATA[Game Juice is that ethereal quality that makes a game pop and go beyond mere interactivity into something that crackles, fizzes, squishes and breathes.]]></description><link>https://solivagant.github.io/2016/01/24/dev-blog-3-drink-your-juice-3/</link><guid isPermaLink="false">cad22ada-7659-4aba-9ac0-eedc073987f6</guid><category><![CDATA[devdiary]]></category><category><![CDATA[gamedev]]></category><dc:creator><![CDATA[Geraldo Nascimento]]></dc:creator><pubDate>Sun, 24 Jan 2016 22:10:23 GMT</pubDate><media:content url="https://solivagant.github.io/content/images/2016/05/tumblr_n9t48f9YCj1ti5owoo2_r5_500.gif" medium="image"/><content:encoded><![CDATA[<img src="https://solivagant.github.io/content/images/2016/05/tumblr_n9t48f9YCj1ti5owoo2_r5_500.gif" alt="Dev Diary #3 - Drink your Juice"><p><strong><em>Juice</em></strong> is that ethereal quality that makes a game <strong>pop</strong> and go beyond mere interactivity into something that <em>crackles</em>, <strong>fizzes</strong>, <mark>squishes</mark> and <strong><em>breathes</em></strong>.</p>
+
+<p><img src="https://solivagant.github.io/content/images/2016/05/Solivagant_2016-Jan-24.gif" alt="Dev Diary #3 - Drink your Juice" title=""><strong>Osman (Mitchell Corporation - arcade - 1996)</strong></p>
+
+<p><strong>Grapefrukt</strong>'s talk Juice It Or Lose It is the absolute textbook lesson on all things game juice.</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Fy0aCDmgnxg" frameborder="0" allowfullscreen></iframe>
+
+<p>I've become fascinated the concept of game juice and I see it now in movies, flashing animations, adverts, TV shows. </p>
+
+<p>It's <strong>like seeing The Matrix</strong>, and I'm now a really big proponent of it, striving to raise #gamedevs' awareness of Juice and learning when to apply it.</p>
+
+<p>I think of game juice not just as subtly tweening  of game elements, but as the various components of animated and interactive content.</p>
+
+<p>I've been collecting the best examples of game juice for my inspiration and entertainment, and I want to share what I've been collecting, hoping to give other <strong>#gamedevs</strong> the chance to come up with their own juicy creations.</p>
+
+<p>More than just serving as a gorgeous gif gallery, I want to break down the juicy components of each example.</p>
+
+<h2 id="juicesample1rtypeleo">JUICE SAMPLE #1 - R-TYPE LEO</h2>
+
+<p><img src="https://solivagant.github.io/content/images/2016/05/tumblr_o17jtkAFZd1u6jjy9o1_400.gif" alt="Dev Diary #3 - Drink your Juice"></p>
+
+<p>I love this bouncy laser weapon in R-Type Leo, as well as should, cause <strong><em>Gunkatana</em></strong>, the game I'm developing full time, features bouncing lasers.</p>
+
+<p>There's fast <strong>flashing red</strong> circles, which didn't need to be there, but they increase the intensity of the piece.</p>
+
+<p>When the lasers hit the enemies there's a <strong>white red flash</strong> and an explosion. On the walls, the bombs create a similar, though smaller, explosive effect, while the lasers firing directly ahead of the ship create a blue and white explosion.</p>
+
+<p>And all of that in such a short gif!</p>
+
+<hr>
+
+<h2 id="juicesample2towerfall">JUICE SAMPLE #2 - TOWERFALL</h2>
+
+<p><img src="https://solivagant.github.io/content/images/2016/05/Towerfall-Double-Kill.gif" alt="Dev Diary #3 - Drink your Juice"></p>
+
+<p>Towerfall is a great example of a modern indie game that's really in touch with juice. </p>
+
+<p>When the characters jump they're sort of squeezed, their shape is tweened, the same when they're dashing. It's a really interesting way of making the most out of a sprite animation by tweaking it in code and creating a cartoonish animated style.</p>
+
+<p>The arrows have a light on the background, the torches are animated and there's snow in the background, all working together to form a very dynamic level.</p>
+
+<p>That is one of the challenges we are facing developing <strong><em>Gunkatana</em></strong>. As a top down game, we need to think of ways of making the floors and the various elements of the level interesting to look at from that perspective. It's not as easy as just going for a parallax effect.</p>]]></content:encoded></item><item><title><![CDATA[Dev Diary #2 - Winners!]]></title><description><![CDATA[Showcased at the Intel Buzz Workshop event, Gunkatana was voted by the attendees as the best game on show. Gunkatana: lightning fast cyberpunk action!]]></description><link>https://solivagant.github.io/2015/12/09/gunkatana-developer-showcase-winner/</link><guid isPermaLink="false">8f2a6650-b280-44a2-9ea5-36f0e7a14a24</guid><category><![CDATA[unity]]></category><category><![CDATA[devdiary]]></category><category><![CDATA[gamedev]]></category><dc:creator><![CDATA[Geraldo Nascimento]]></dc:creator><pubDate>Wed, 09 Dec 2015 16:27:00 GMT</pubDate><media:content url="https://solivagant.github.io/content/images/2016/05/23627194376_ef3da50df4_o.jpg" medium="image"/><content:encoded><![CDATA[<img src="https://solivagant.github.io/content/images/2016/05/23627194376_ef3da50df4_o.jpg" alt="Dev Diary #2 - Winners!"><p>Intel and BeMyApp hosted the <a href="https://software.intel.com/en-us/event/buzzworkshop">Intel Buzz Workshop</a> event on December 8th, where a cadre of games industry experts gave talks and panels on a number of really interesting subjects, like game design, how to make your own game engine and VR.</p>
+
+<p><img src="https://solivagant.github.io/content/images/2016/05/Solivagant_2015-Dec-08-1.jpg" alt="Dev Diary #2 - Winners!"></p>
+
+<p>I really enjoyed The Future of Indie Games panel hosted by <a href="https://twitter.com/oh_cripes">Joe Bain</a> with <a href="https://twitter.com/attilioHimeki">Attilio Carotenuto</a>, <a href="https://twitter.com/usefulslug">Vegard Myklebust</a> and <a href="https://twitter.com/gormlai">Gorm Lai</a>, all great, proficient game devs and friends I’ve met in the London indie dev community.</p>
+
+<p>My biggest takeaway was Gorm’s insistence: <strong>“polish, polish, polish!”</strong>. </p>
+
+<p>I definitely agree, it’s what I’m working on with <strong>Gunkatana</strong>, polishing the hell out of it.</p>
+
+<p>The event had a special <strong>Developer Showcase</strong>, a challenge open to any indie developers, studios or students. I submitted <strong>Gunkatana</strong> and was thankfully accepted to the participate, along with 7 other games.</p>
+
+<p>My day consisted of manning the Gunkatana table, explaining the game to attendees.</p>
+
+<p>The joy in seeing someone pick the game up and really quickly <em>get it</em>, understand what it’s all about and join in the banter, this is the reason why I’ve quit my previous job and gone <strong>full time</strong>.</p>
+
+<p>Seeing someone take real fun from something I’ve built and designed is an <em>incredible happy feeling</em>.</p>
+
+<p>The <strong>Developer Showcase</strong> urged attendees to vote on the Best Game of the Show, and <strong>Gunkatana won!</strong></p>
+
+<p>This marks the first award Gunkatana has received, and I’m pretty sure it won’t be the last!</p>
+
+<p><img src="https://solivagant.github.io/content/images/2016/05/sombraspin.gif" alt="Dev Diary #2 - Winners!">
+People really enjoyed playing it and picked up on the text we’ve placed on the game when you kill someone: <em>“Selfie Kill”</em>, <em>“Rail Kill”</em>, <em>“SWIPED!”</em>, and some would even say it out loud. The same happened at GameCity!</p>
+
+<p>Some of the expressions and words people told me throughout the day:</p>
+
+<p><strong>“this is amazing” 
+“this is so cool” 
+“it feels really good” 
+“controls very well” 
+“satisfying to kill the other characters”</strong></p>
+
+<p>I turned on the very <strong>prototypical</strong> AI bots on some occasions, and players would keep killing them and enjoying that interaction, despite the AI bots still being a bit embrionary and not being able to use all the weapons.</p>
+
+<p>Gunkatana is a very fast paced action game that features a number of very quick game mechanics. Once you get what makes it tick, you can quickly <strong>zip around the arena</strong> and destroy your enemies, making cool <strong>reflected laser</strong> kills and <strong>running</strong> them over!</p>
+
+<p><img src="https://solivagant.github.io/content/images/2016/05/bloodcredits.gif" alt="Dev Diary #2 - Winners!"></p>
+
+<p>I’m so used to the game that I kept accidentally slaying the other players without even realising, so by the end of the day I just watched people play rather than join in.</p>
+
+<p>One of the many takeaways I got is that there’s room to introduce the mechanics piece by piece so that players get used to them. That isn’t very easy to do on a pure local multiplayer game, which gives me more fuel to develop the <strong>single player / co-op campaign</strong>.</p>
+
+<p>I also want to give players a good package of fun, since the game feel and mechanics are so enjoyable, I want to give them a chance to practice their skills.</p>
+
+<p>It was also the first time that I had people try out the new respawning feature, and despite a bug here and there, it worked pretty well, and players understood <strong>they could choose where and when to respawn</strong>.</p>
+
+<p>One suggestion I took to heart to <strong>signal a character's death</strong> more, so they're aware they  have died. Which means researching other games to figure out how best to do it, besides, you know, splattering the corpse all over the place.</p>
+
+<p>It was a fantastic day, as all days that I have shown the game at an event are, really!</p>
+
+<p>We’re now preparing to put the game on <strong>Greenlight</strong>, and hoping to <strong>release the game next year</strong>.</p>
+
+<p>Follow dev updates on my <a href="https://twitter.com/solivagant">@Solivagant</a> twitter account!</p>
+
+<p>Check out <a href="http://gunkatana.com">www.Gunkatana.com</a> for in-game lore and screenshots!</p>]]></content:encoded></item><item><title><![CDATA[Dev Diary #1 - Origins of Gunkatana]]></title><description><![CDATA[This is how Gunkatana got started, the local multiplayer / single player & coop top down retro action game driving a katana into your soul. First dev blog.]]></description><link>https://solivagant.github.io/2015/11/26/the-origins-of-gunkatana/</link><guid isPermaLink="false">8d6ee96a-b75e-436c-9123-4978dbc982fe</guid><category><![CDATA[unity]]></category><category><![CDATA[devdiary]]></category><dc:creator><![CDATA[Geraldo Nascimento]]></dc:creator><pubDate>Thu, 26 Nov 2015 11:34:00 GMT</pubDate><media:content url="https://solivagant.github.io/content/images/2016/05/promo-KS---final-Main-V3.jpg" medium="image"/><content:encoded><![CDATA[<img src="https://solivagant.github.io/content/images/2016/05/promo-KS---final-Main-V3.jpg" alt="Dev Diary #1 - Origins of Gunkatana"><p>Since last year I've been having a lot of conversations that start with someone asking me a specific question.</p>
+
+<p>"So what's your game about?"</p>
+
+<p>"Cyberpunk, lasers, katanas, turbo grind rails &amp; lots of <strong>juice</strong>."</p>
+
+<p><img src="https://solivagant.github.io/content/images/2016/05/c8df160f39a20162a7518e1468ede358_original.gif" alt="Dev Diary #1 - Origins of Gunkatana"></p>
+
+<p>That's how I introduce <strong>Gunkatana</strong>, the game I'm now developing as a full time indie developer.</p>
+
+<p><strong>Gunkatana</strong> was born from a confluence of two events.</p>
+
+<h2 id="birth">Birth</h2>
+
+<p>The <a href="https://twitter.com/londongamespace">London Game Space</a> hosted an event to showcase locally sourced <strong>local multiplayer games</strong>. </p>
+
+<p>I had never shown a game to anyone and have them play it and critique it before. I was just starting to get my feet wet developing prototypes in <strong>Unity</strong>.</p>
+
+<p>I tinkered with a very early top down action game I was working on and tacked a second player on it. Challenged myself to go ahead and show that game at the event.</p>
+
+<p>I developed that first draft of <strong>Gunkatana</strong> as an attempt to decipher what made <a href="http://hotlinemiami.com">Hotline Miami</a> tick. </p>
+
+<p>Watching Hotline Miami's sequel trailer was the second pivotal event. It has inspired me in those initial game dev hours and ever since.</p>
+
+<p>The feedback I got from that initial demo was great. It was already somewhat fun, if incredibly basic and unpolished. Players gave me tons of ideas of where to take it next.</p>
+
+<p>The core gameplay was already there: <strong>lasers</strong> and <strong>turbo speed grind rails</strong>.</p>
+
+<h2 id="speedkills">Speed kills</h2>
+
+<p>The speed rails started off as quick way to implement the Matrix's wall running. I wanted to create a game with that sense of speed and action, letting you speed along the walls, Mirror's Edge like.</p>
+
+<p><img src="https://solivagant.github.io/content/images/2016/05/deathzone.gif" alt="Dev Diary #1 - Origins of Gunkatana"></p>
+
+<p>Eventually I started laying the speed tracks anywhere in the level, and they became speed rails on the floor. The Gunkatana fighters attach their boots to them and zoom along the rails at high speeds, running over whoever's on the way, corpses thrown about and blood flying everywhere.</p>
+
+<p><a href="https://twitter.com/burningsushi">Sujan</a>, one of the great friends I’ve made at the London Indies scene, told me to actually implement the titular sword from the title. I did so. It's really fun to be writing C# classes called <em>KatanaDashSlash</em>.</p>
+
+<h2 id="fromnothingeverything">From nothing, everything</h2>
+
+<p>I needed someone to bring the world of Gunkatana to life, and put out a call for artists on Twitter. A friend, Florian, recommended me one of his friends and thus I met <a href="https://solivagant.github.io/2015/11/26/the-origins-of-gunkatana/www.crazyarcadia.com">CrazyArcadia</a>.</p>
+
+<p>CrazyArcadia knocked out a beautiful mockup, and I was in love with those pixels. It's always fascinating for me to suddenly see imagination becoming reality. </p>
+
+<p>The core of Gunkatana is a competitive mix of dark futuristic themes and very mechanically tight gameplay, infused with combat from The Matrix and Equilibrium. </p>
+
+<p>Seeing it come to life from my initial programmer art &amp; OpenGameArt assets into something palpable, phosphorous &amp; vibrant, it's an incredible experience.</p>
+
+<p>Both me and CrazyArcadia are responsible for the game design and its a joy to discuss gameplay mechanics and level designs with him.</p>
+
+<p>The result is what you see in this preliminary trailer, featuring original music by <a href="http://www.electriccafe.xyz">Electric Cafe</a> of Aqua Kitty soundtrack fame.</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/4F2avVTbuAY" frameborder="0" allowfullscreen></iframe>
+
+<h2 id="future">Future</h2>
+
+<p>Gunkatana was born from participating in the London indie dev community. The feedback I get when showing it and playing it at events has been invaluable and has helped shape where it's now, and will help shape where it's headed.</p>
+
+<p><img src="https://solivagant.github.io/content/images/2016/05/level-select.gif" alt="Dev Diary #1 - Origins of Gunkatana"></p>
+
+<p>Gunkatana has received very positive press coverage, at <a href="http://www.theguardian.com/technology/2015/nov/02/gamecity-2015">The Guardian</a> and <a href="http://www.impactnottingham.com/2015/11/gamecity-gunkatana/">Impact Nottingham</a>.</p>
+
+<p>I'm incredibly proud of what we've achieved.</p>
+
+<p>Tying together the efforts of <a href="https://solivagant.github.io/2015/11/26/the-origins-of-gunkatana/www.crazyarcadia.com">CrazyArcadia</a>, lead artist and game designer on the project, <a href="https://twitter.com/LesenistGold">Sarah Schemske</a>, writer for Gunkatana, <a href="http://www.crowsmos.pt">João Nascimento</a>, website designer, <a href="http://davidanstey.com">David Anstey</a>, who designed one of our main characters, <a href="https://twitter.com/eccentricsheep">Nell F.</a>, who designed the wonderful poster art, <a href="http://www.electriccafe.xyz">Electric Cafe</a>'s music, while simultaneously adding new <strong>features</strong>, level <strong>building</strong> techniques, <strong>quality of life</strong> software engineering practices and just fun stuff like <strong>running over your enemies when grinding the rails</strong>, makes me incredibly happy.</p>
+
+<p><a href="http://www.gunkatana.com">www.gunkatana.com</a></p>]]></content:encoded></item><item><title><![CDATA[The Creative Process]]></title><description><![CDATA[Fostering a creative process takes time. Look to your inspirations deep enough and you'll find the cracks where glue ws applied. ]]></description><link>https://solivagant.github.io/2015/10/30/creativity/</link><guid isPermaLink="false">e9d1fa25-aa8b-4eaf-9472-fd32d7cbe1c5</guid><category><![CDATA[creativity]]></category><dc:creator><![CDATA[Geraldo Nascimento]]></dc:creator><pubDate>Fri, 30 Oct 2015 12:00:00 GMT</pubDate><media:content url="https://solivagant.github.io/content/images/2016/05/6784150372_461942f17e_o.jpg" medium="image"/><content:encoded><![CDATA[<img src="https://solivagant.github.io/content/images/2016/05/6784150372_461942f17e_o.jpg" alt="The Creative Process"><p><em>Creativity</em> is reinterpreting what comes inside you into something else.</p>
+
+<p>I <strong>struggled</strong> for years to come up with something original. That affected my craft, to the point where I didn't consider anything I did original enough; I would stop myself before it started.</p>
+
+<p>I prototyped some ideas, stumbled my way, but when seeing similarities between what I was building and other games, I’d falter, craving to build something wholly original, from the root, and failing to muster the <em>creativity</em> to do so.</p>
+
+<p>That all changed once I read <a href="http://austinkleon.com/steal/" title="Steal like an Artist">Steal Like an Artist</a> by Austin Kleon while on a flight. I bought it by chance on the airport's shops.</p>
+
+<p>Without access to the internet or a computer, I took notes of what I learned from the book, and my mind was ablaze.</p>
+
+<p>How I approach <strong>creativity</strong> has completely changed since then.</p>
+
+<p>Artists by education will already have a grasp of this, but for the budding software coder or game designer that is getting in touch with their creativity, the concept of stealing and copying, in order to come up with their own ideas, could seem wrong.</p>
+
+<p><em>I</em> have involuntarily practiced premature self-rejection when writing and concepting, for years. I'd sabotage myself and wouldn't break through, thinking that comparing what I was making with something else was wrong.</p>
+
+<p><strong>THIS</strong> is the message I want to get across: don’t stifle your creative process by outright rejecting your early ideas. </p>
+
+<p><strong>Write down your derivative ideas!</strong> Let them percolate in your mind, and then enrich them, mix them, change them, make them your own.</p>
+
+<p>I don’t advocate that it's ok for games like 2048 to spring up, just cloning a game’s mechanics heart and open sourcing it, but it is part of the creative process to learn from other games, take them apart, find out how to build them, and <strong>THEN</strong>, introduce a <em>secret sauce</em> of your own.</p>
+
+<p>From my experience, that is how creativity works, it’s not a magical faucet that you turn on. Staring at a blank page won’t get you anywhere.</p>
+
+<p>When stuck for ideas, look to your inspirations, reverse engineer them, and then twist them, play with them.</p>
+
+<p>I love making games because the process of making games is so fun and enriching, and because playing games for research IS fun. Mapping other games' features and design, discovering what makes them special, it's how I get my ideas.</p>
+
+<p>Games, books, movies, culture, the world, the way a plane flies in the air, a dewdrop falling from grass, a conversation at the pub, an overheard diatribe, an article, a boring commute, these are all opportunities to take it all in, and plant the seeds that eventually, suddenly, lead to an outpour of ideas.</p>
+
+<p>Exploring the <strong>affordance space</strong> that you’re creating as you go is like giving birth to a universe of rules and twisting them and changing them as you explore them.</p>
+
+<p>Give your design doc a scrap and turn things upside down: many ideas will look great written down but once played by humans you might realize they don’t work or they need tweaking.</p>
+
+<p>Always be aware that you can change your idea at any time, tweak it, twist it and give it a spin. You could try understanding how other games make it work.</p>
+
+<p>In my opinion, the only <em>wrong</em> thing to do is to craft a direct clone and try to pass it off as original. There’s no creative input, it’s the laziest of all processes: the off-brand copy.</p>
+
+<p>Once you embrace, study, and <strong>master</strong> your inspirations, whether it’s game mechanics or prose or game genres or <em>potato waffle</em> recipes, you'll just feel free to create, without fearing that its original or not.</p>
+
+<p>It's definitely what happened to me. I proudly embrace the influences of Hotline Miami and Towerfall in the making of <strong>Gunkatana</strong>, my cyberpunk top down local multiplayer game with single player campaign to boot.</p>
+
+<blockquote>
+  <p>"Nobody ever became a writer just by wanting to be one. If you have anything to say, anything you feel nobody has ever said before, you have got to feel it so desperately that you will find some way to say it that nobody has ever found before, so that the thing you have to say and the way of saying it blend as one matter — as indissolubly as if they were conceived together."</p>
+  
+  <p>-F. Scott Fitzgerald</p>
+</blockquote>]]></content:encoded></item><item><title><![CDATA[Unity Automatic Asset Processing Tutorial]]></title><description><![CDATA[How to automatically set import settings on assets in Unity. Script it easy!]]></description><link>https://solivagant.github.io/2015/09/23/asset-processing-tutorial/</link><guid isPermaLink="false">c33273df-7c95-4a79-9990-80e4df2afdc3</guid><category><![CDATA[unity]]></category><category><![CDATA[tutorial]]></category><dc:creator><![CDATA[Geraldo Nascimento]]></dc:creator><pubDate>Wed, 23 Sep 2015 16:57:26 GMT</pubDate><media:content url="https://solivagant.github.io/content/images/2016/05/Unity5-KeyVisual-Logo-Big.jpg" medium="image"/><content:encoded><![CDATA[<img src="https://solivagant.github.io/content/images/2016/05/Unity5-KeyVisual-Logo-Big.jpg" alt="Unity Automatic Asset Processing Tutorial"><p>One of the most frequent questions I see online about <strong>Unity</strong> and pixel art is how to set up your sprites so that they look <em>pixel perfect</em>.</p>
+
+<p>There's a couple of ways outlined <a href="http://blogs.unity3d.com/2015/06/19/pixel-perfect-2d/">out there</a> and most likely all of them involve setting up your <strong>asset imports</strong> to specific settings.</p>
+
+<p>So you go about your business, select all the sprites you have on the project, and set it up. But then a couple of weeks later, you've got some new art, you gotta go and do it all again. </p>
+
+<p>And again!</p>
+
+<p>Enter <strong>automatic asset processing scripts</strong>.</p>
+
+<p>The <a href="http://docs.unity3d.com/ScriptReference/AssetPostprocessor.html">Unity docs</a> describe them like so:</p>
+
+<blockquote>
+  <p>AssetPostprocessor lets you hook into the import pipeline and run scripts prior or after importing assets.</p>
+</blockquote>
+
+<p>Here's a very simple example of an AssetPostprocessor.</p>
+
+<p>1 - Create a subclass of AssetPostprocessor and save it in an Editor folder. <br>
+2 - Implement OnPreProcessTexture. You get access to the   TextureImporter via the <strong>assetImporter</strong> field. It's in this  importer that you change the settings.</p>
+
+<pre><code class="language-csharp">
+    public void OnPreprocessTexture()
+    {
+        TextureType type = GetTextType(assetPath);
+        if(type == TextureType.UnitySprite)
+        {
+            SetUnitySprite (assetImporter as TextureImporter);
+        }
+    }
+
+    void SetUnitySprite(TextureImporter importer)
+    {
+        importer.mipmapEnabled = false;
+        importer.maxTextureSize = 4096;
+        importer.textureFormat = TextureImporterFormat.AutomaticTruecolor;
+        importer.textureType = TextureImporterType.Sprite;
+        importer.spritePixelsPerUnit = PIXELS_P_UNIT;
+        importer.filterMode = UnityEngine.FilterMode.Point;
+    }
+
+    TextureType GetTextType (string assetPath)
+    {   
+        if(assetPath.Contains("Resources/Sprites"))
+        {
+            return TextureType.UnitySprite;
+        }
+        else
+        {
+            return TextureType.Other;
+        }
+    }
+
+</code></pre>
+
+<p>This will work off the bat, just try adding any new images to the specified path and it'll be imported with the specified settings.</p>
+
+<p>It's a huge time saver, and you can use it in all sorts of data, including XML, for example, so you could import weapon statistics by updating an XML file, rather than a static class somewhere or another clunky solution.</p>]]></content:encoded></item><item><title><![CDATA[Global Game Jam 2014]]></title><description><![CDATA[<p>For the first time I've participated in a game jam, and the Global Game Jam no less.</p>
+
+<p>Knowing that one of my best friends was also participating in Malta, and that actually he was one of the organisers of the GGJ at his University, was a big boost to my</p>]]></description><link>https://solivagant.github.io/2014/01/28/global-game-jam-2014/</link><guid isPermaLink="false">35b38cbf-effc-42c3-9f6b-242eaa6b99c2</guid><category><![CDATA[creativity]]></category><category><![CDATA[gamedev]]></category><dc:creator><![CDATA[Geraldo Nascimento]]></dc:creator><pubDate>Tue, 28 Jan 2014 11:23:00 GMT</pubDate><media:content url="https://solivagant.github.io/content/images/2016/05/nca_globalgamejam_web_r2b.jpg" medium="image"/><content:encoded><![CDATA[<img src="https://solivagant.github.io/content/images/2016/05/nca_globalgamejam_web_r2b.jpg" alt="Global Game Jam 2014"><p>For the first time I've participated in a game jam, and the Global Game Jam no less.</p>
+
+<p>Knowing that one of my best friends was also participating in Malta, and that actually he was one of the organisers of the GGJ at his University, was a big boost to my commitment.</p>
+
+<p>Teaming up with Robin, Robert and Antonio to build a game related to <strong>"We don't see things as they are, we see things as we are."</strong> during 48 hours was at times an exasperating experience that came together in the second day and ended in a <em>jamming ecstasy</em> as music, art, code became one being with a purpose.</p>
+
+<p><a href="http://geraldonascimento.files.wordpress.com/2014/01/inslide1_0.png"><img class="aligncenter size-large wp-image-944" alt="Global Game Jam 2014" src="http://geraldonascimento.files.wordpress.com/2014/01/inslide1_0.png?w=580" width="580" height="411"></a></p>
+
+<p>Our limbed eyeball trots the circular world filled with danger and mystery, forever guided by our work as a team, and the wonderful community of game jammers that was present at SAE London.</p>
+
+<p>You can play Inslide World here: <a href="http://http://globalgamejam.org/2014/games/inslide-world">http://globalgamejam.org/2014/games/inslide-world</a></p>
+
+<p>Again, and for a while now, discussing and experiencing my passions without feeling like they're simple pastimes, without undue anxiety stemming from the fleetness of such moments in the past, was a fascinating and calming experience.</p>
+
+<p>"It's ok Geraldo, these people will be there next time, this is real and not a smoky impossible dream", I tell myself. Being close to the people making things happen is a great learning experience. It's the validation I needed, as a human, that my beliefs and wants are not just mine. I feel among brethren, and not strangers. Favourite games and mechanics will vary but the common thread of making video game experiences is shared.</p>
+
+<p>Jam On.</p>]]></content:encoded></item><item><title><![CDATA[Looking back to 2013]]></title><description><![CDATA[<p>I've just hugged my <strong>big brother</strong> goodbye. I will see him next year, probably 2, 3 or 4 months from now. <br>
+I've been living in London for the past year and a half (and change). These are the last days from my Christmas holidays in Portugal, I'm flying back to</p>]]></description><link>https://solivagant.github.io/2013/12/29/looking-back-to-2013/</link><guid isPermaLink="false">92bbc53f-5af8-4ce7-9b4e-ad747b1db66d</guid><category><![CDATA[personal]]></category><dc:creator><![CDATA[Geraldo Nascimento]]></dc:creator><pubDate>Sun, 29 Dec 2013 11:21:00 GMT</pubDate><media:content url="https://solivagant.github.io/content/images/2016/05/European_union_flag-8.jpg" medium="image"/><content:encoded><![CDATA[<img src="https://solivagant.github.io/content/images/2016/05/European_union_flag-8.jpg" alt="Looking back to 2013"><p>I've just hugged my <strong>big brother</strong> goodbye. I will see him next year, probably 2, 3 or 4 months from now. <br>
+I've been living in London for the past year and a half (and change). These are the last days from my Christmas holidays in Portugal, I'm flying back to the big city on January 2nd.</p>
+
+<p>A lot of things happened this year.</p>
+
+<p>Moving here in 2012 was a <em>hard</em> decision. The hardest I've ever taken yet. But if you know me just the slightest, you'll know my passion for games. And my passion for games and games development was not being sated in Portugal. <br>
+The solution was always to move.</p>
+
+<p>I had the chance to go to Facebook London's HQ and do a talk on cross-platform development, representing where I work at, Plumbee. That was pretty momentous. I met one of my heroes, <strong>Alan Cannistraro</strong>. I learned Objective-C through his Stanford courses, available on iTunes U. That knowledge got me a job at Bliss Applications doing mobile apps and all of that eventually got me my current job. An ex-Apple employee, he's at Facebook now heading up iOS development. Talking with him was really great.</p>
+
+<p>A friend visited me and we went to London Comic-Con. I got an autograph from <strong>Mark Meer</strong>, I explicitly bought the Mass Effect art book just so I could get his signature. I told him I loved his work and to me he was the real Shepard, no matter how good <strong>Jennifer Hale</strong>'s work is. I also told him I approved of the Mass Effect 3 ending. He thanked me. It was my first time at a cosplay event. It was really great to see everyone have so much fun, and I hope to do some cosplay in the future.</p>
+
+<p>I met <strong>Chris Avellone</strong>, at another event, Rezzed. I had played his most praised game, Planescape: Torment, some 14 years ago. I had the chance to meet him and interview him thanks to our mutual friend <strong>Ian</strong>. This was without a doubt the highlight of this year. Having the chance to personally thank such a huge influence in my life, Chris having written and designed so many of the games that formed my taste in video games, it was a very special moment for me. He signed my boxed copy of Planescape: Torment, which I had travelled to Portugal almost on purpose to retrieve it some months before. Seeing him deliver his Project Eternity keynote, I shouted YEAH when he showed all the Black Isle games logos. Those were my teenage years on full display for all to see. I keep looking back to that first time I played Torment. I had no idea I would ever meet the person responsible for those first few lines of dialogue and interaction. I had no conception at the time there even was a person behind that. But after that and the Fallout games, I really started to pay attention to the people that made games. And if at the time I didn't consciously decide to become one of them, I know now that was one of the key moments that sparked the dream.</p>
+
+<p>Still at Rezzed I played Journal, by <strong>Richard Perrin</strong>. I spoke with him and he gave me some great tips, and just seeing his game completely inspired my own games and projects and I changed the direction for #projectnoir, previously a visual novel adventure game and now a top down adventure game. I asked him why can you jump in Journal, when there's no platforms to climb to. He said the extra interaction brought you closer to the game. I agreed and did a quick platforming + dialogue prototype right afterwards.</p>
+
+<p>I also met <strong>Rami Ismail</strong>, one of the people behind Ridiculous Fishing, Luftrausers, Nuclear Throne, Super Crate Box and so many other games and projects. He's one of the nicest developers I've met, and I really admire his output, either through games or reaching out to the community in tangible ways, like pressKit(). I wish him all the best with his next games, and would love to say hi some next time.</p>
+
+<p>This year I dabbled in Unity and Futile. I even did an internal talk at Plumbee about what I had learned. I've been doing good progress on #projectnoir and recently started work on a smaller, less ambitious little platformer, something perhaps a bit autobiographical.</p>
+
+<p>In September I went to Eurogamer Expo, I had a two day pass. However, I didn't manage to find anyone to go with me. The first day started good. I bought Doom and Fallout t-shirts. Thank you Bethesda for the merchandising, so many years later I can finally wear official Fallout gear! <br>
+Not many games excited me, though. <br>
+However, since I was alone, I was quite depressed by the end of the day, and did not go the second. Just the prospect of another 8 hours staring at games and not saying a single word, it was just too much. I could have tried to spark some conversations, sure, but it can be very hard for me if I don't feel at ease.</p>
+
+<p>I went with friends from work to the onelifeleft podcast Christmas party, and I karaoke'd Don't Stop Believing, with modified lyrics, helped by the <strong>onelifeleft crew</strong>. It was a brilliant party to top off the year, to be amongst lovers of video games, celebrating everything good about it. There was even Secret game Santa. I met <strong>Keith Stuart</strong>, <strong>Kieron Gillen</strong> and <strong>Simon Parkin</strong> at that party, world famous game journalists, but also really cool, approachable and fun people. Hell, I sat on Keith's lap while he handed me a PS3 game from the Secret Santa pile. Thanks Santa, I got Dead Rising 2 (and some F1 game...)!</p>
+
+<p>While I love the work Keith and Simon do, meeting Kieron Gillen was such a fantastic surprise for me. I couldn't resist saying hi to him and the folks he was playing Coup with. I told him how amazing his review for Deus Ex (the first one!) was back in the day, and we reminisced about that great game.</p>
+
+<p>This year another one of my friends also moved abroad to work on games research. It's <strong>three</strong> of us now, friends that met at University during our Computer Science course and moved out of Portugal to work in games. I'm here in London, another one is near Toronto, and now one moved to Malta. It makes me so happy that we are able to pursue our dreams and don't have to be cut down by the near-sightedness of the people of our country. Really, really happy. For anyone born in a country that's been making games since the 70s, having the chance to work on games might be nothing new. For us, it's our dream.</p>
+
+<p>I have also made fantastic friends at work. I have to send a shoutout to a particular <strong>argentinian friend</strong> that has been a very patient and fun friend.</p>
+
+<p>Looking back at 2013, I can't say I regret much. I could have moved to a slightly bigger, slightly farther away, slightly cheaper flat, but other than that, I'm pretty happy with this year. All of the experiences I've had, all of the people I've met, all the fantastic work I've had a chance to contribute to at Plumbee, all of them had been just dreams, with no chance of happening. Until I tried to make them happen.</p>]]></content:encoded></item><item><title><![CDATA[Moving to London]]></title><description><![CDATA[<p>I've been living in London for 5 and a half months now, having joined <a href="http://www.plumbee.com/" title="Plumbee">Plumbee</a> at the same time.</p>
+
+<p>It's been quite a ride so far. I am indeed loving every minute. Of course, I miss my family and I also miss my friends from Portugal, but work and my</p>]]></description><link>https://solivagant.github.io/2012/12/01/moving-to-london/</link><guid isPermaLink="false">181e9c86-8c8f-487d-bf04-bff498fd4e1a</guid><dc:creator><![CDATA[Geraldo Nascimento]]></dc:creator><pubDate>Sat, 01 Dec 2012 11:19:00 GMT</pubDate><media:content url="https://solivagant.github.io/content/images/2016/05/London_Thames_Sunset_panorama_-_Feb_2008.jpg" medium="image"/><content:encoded><![CDATA[<img src="https://solivagant.github.io/content/images/2016/05/London_Thames_Sunset_panorama_-_Feb_2008.jpg" alt="Moving to London"><p>I've been living in London for 5 and a half months now, having joined <a href="http://www.plumbee.com/" title="Plumbee">Plumbee</a> at the same time.</p>
+
+<p>It's been quite a ride so far. I am indeed loving every minute. Of course, I miss my family and I also miss my friends from Portugal, but work and my coworkers, now friends, keep me in high spirits and very motivated.</p>
+
+<p>[TECH]
+Contrary to my initial expectations, I am very much enjoying programming in ActionScript. I was used to Objective-C's verbosity but I find AS3's slimness quite refreshing. I've been learning and relearning a lot of concepts I've used in the past for hobby projects and in the little University game development I did (can't believe I'm using spritesheets for work, I've dreamed about it for so long!). <br>
+Exploring hardware accelerated frameworks like Starling gives me great hope for what is possible to achieve with an AIR packaged app in an iPhone or iPad. I mean, even Super Hexagon was done with the help of AIR! <br>
+It's not a perfect product and Adobe is annoyingly coy about letting people know that no, Flash isn't really dead, and if you play a lot of games on your iPhone, pretty sure one of them at least was made using ActionScript and AIR. <br>
+I enjoy it so much I started porting my fabled Pocket Bogart project to ActionScript, tying the <a href="http://gamua.com/starling/">Starling</a> framework with <a href="http://feathersui.com/">FeathersUI</a> and <a href="http://www.richardlord.net/blog/introducing-ash">Richard Lord's system-based approach</a> to game development. And I learned about all of these different frameworks from a portuguese friend I met at Plumbee.</p>
+
+<p>[EXODUS]
+It's funny that there's already three portuguese guys at Plumbee, as even today I met a portuguese girl at Tesco, even the owner of the hairdresser I go to is portuguese. We're everywhere! <br>
+Portugal's woes had a big influence in my decision to leave, however I've always felt a desire to work abroad, especially because we don't have a game industry per se, just a couple of game studios that can't really soak up the quantity of willing developers.</p>
+
+<p>[HOUSE]
+If there's one downside to living in London is the housing. The closer you want to be to the center, the more expensive and smaller the 4 walled space you'll get. This is normal, but in London people seem to be willing to live in the most ridiculously small spaces. And you'll pay premium for a place like that, depending on the location!</p>
+
+<p>[MULTI]
+London is truly an international city. The british people I've met keep telling me London is practically its own country compared with the rest of the UK. It's a very welcoming city with many boroughs that resemble little towns.</p>
+
+<p>[PLUMBEE]
+I am having the best of times at Plumbee. Everyone is fantastic, the founders are great, the work &amp; tech are on the bleeding edge and I really feel I make a difference. And we also know how to have fun, as today a POOL TABLE arrived at our shiny new office in Moorgate. We celebrated by playing pool (I'm terrible at it) and belting out Rock Band.</p>]]></content:encoded></item><item><title><![CDATA[Tips for new Mac users]]></title><description><![CDATA[<p>I've been a Mac user for a while now. Over time I've learned lots of useful tips. I've written this guide back in 2012 in the time of Snow Leopard, some of these will be outdade, but a lot is still useful.</p>
+
+<p>Consider this post your "Welcome Guide" into the</p>]]></description><link>https://solivagant.github.io/2012/04/15/tips-for-new-mac-users/</link><guid isPermaLink="false">83b97357-3e1f-4e84-af6d-4bb474fb10b0</guid><category><![CDATA[tutorial]]></category><dc:creator><![CDATA[Geraldo Nascimento]]></dc:creator><pubDate>Sun, 15 Apr 2012 10:17:00 GMT</pubDate><media:content url="https://solivagant.github.io/content/images/2016/05/og-1.jpg" medium="image"/><content:encoded><![CDATA[<img src="https://solivagant.github.io/content/images/2016/05/og-1.jpg" alt="Tips for new Mac users"><p>I've been a Mac user for a while now. Over time I've learned lots of useful tips. I've written this guide back in 2012 in the time of Snow Leopard, some of these will be outdade, but a lot is still useful.</p>
+
+<p>Consider this post your "Welcome Guide" into the world of Apple computing.  </p>
+
+<h2></h2>  
+
+<h2>Shortcuts</h2>  
+
+<p>Let's start off with some simple shortcuts.  </p>
+
+<ul>  
+    <li>Press ⌘ ⇧ and 3 at the same time: this will take a screenshot of the whole screen.</li>
+    <li>Press ⌘ ⇧ and 4 at the same time (the command, shift and number 4 keys): this allows you to select an area of the screen to take a screenshot.</li>
+    <li>Pro Tip: Press ⌘ ⇧ and 4 at the same time and then press Space. This will change the cursor to a camera and you can select a whole window to take a screenshot.</li>
+</ul>  
+
+<h2></h2>  
+
+<h2>QuickLook</h2>  
+
+<p>If you don't know what <strong>QuickLook</strong> is, go to the <strong>Finder</strong>, select a file, preferably an image or text file, and press Space.</p>
+
+<p>A beautiful window pops up displaying a preview of the file, allowing you to quickly skim a text file or look at a picture without actually opening any app.</p>
+
+<p>While the <strong>QuickLook</strong> window is showing you can press the arrow keys to navigate around the files on that folder, and <strong>QuickLook</strong> will show you a preview of the selected file.</p>
+
+<p>Exercise:  </p>
+
+<ol>  
+    <li>select a couple of image files and press space.</li>
+    <li>In the resulting window, press the button with the four squares, on the top of the QuickLook window.</li>
+    <li>Now you're in Gallery Mode.</li>
+    <li>Go back to regular <strong>QuickLook</strong>  mode.</li>
+    <li>Press the Full Screen icon on the top right of the <strong>QuickLook</strong> icon.</li>
+</ol>  
+
+<div>All of this works very well with Trackpad gestures, using swipes to change the selected item.</div>  
+
+<h2></h2>  
+
+<h2>UI Tricks</h2>  
+
+<p>Imagine you're using your Mac and a friend starts annoying you with detrimental comments, or just asking "why the hell did you get a Mac?".</p>
+
+<p>You can WOW them with this trick only the pros know:</p>
+
+<p><em>Hold the shift-key and minimize a window pushing the yellow button on the top left.</em></p>
+
+<p>You'll witness a slow-motion version of the minimize animation. This works with any UI animation, for instance, hold shift and press F3 to activate <strong>Mission Control</strong>.</p>
+
+<p>I love this feature, woes my friends all the time. You can check out a video of me demoing this feature <a href="http://www.youtube.com/watch?v=6q861dsXRiM&amp;feature=g-upl&amp;context=G298f34aAUAAAAAAADAA">here</a>. Forgive the low quality of the camera.  </p>
+
+<h2></h2>  
+
+<h2>Improve Finder</h2>  
+
+<p>One thing you must have already noticed is that although prettier, <strong>Finder.app</strong> is no match to the Windows Explorer in terms of functionality.</p>
+
+<p>By the way, suffixing .app to an application's name is a developer / Apple evangelist way of referring to apps.</p>
+
+<p>Some weird features of <strong>Finder</strong>:  </p>
+
+<ul>  
+    <li>No cut and paste (really?)</li>
+    <li>Folders aren't sorted to the top of the list, being treated as files (technically they're files, but the user doesn't need to know that)</li>
+    <li>The green button on the left hand corner (Zoom) isn't consistent. This is a problem with most of the Apple built-in apps.</li>
+    <li>Showing hidden files.</li>
+</ul>  
+
+<p>Luckily you can fix all of this by installing <a href="http://www.trankynam.com/xtrafinder/">XtraFinder</a>. This nifty tool adds cut and paste, arranges folders to the top and makes sure Zoom actually maximizes the whole window, as Windows users are accostumed to.</p>
+
+<p>There's a few other options there and it's all toggleable.  </p>
+
+<h2></h2>  
+
+<h2>Uninstalling apps</h2>  
+
+<p>If you've installed apps from the <strong>Mac App Store</strong> (<strong>MAS</strong>), you can just go to <strong>Launchpad</strong>, press the left mouse button down on an app and all the icons will start shivering with an X icon. Just press the X icon for any <strong>MAS</strong> app to uninstall it.</p>
+
+<p>However, this won't work for apps downloaded outside the <strong>MAS</strong>.</p>
+
+<p>If the app you want to uninstall didn't provide an uninstaller script (it would be placed in the App's folder inside <strong>Launchpad</strong>), then you can use <a href="http://www.freemacsoft.net/appcleaner">AppCleaner.app</a>. This free app will show all the installed apps, widgets and other stuff (did you know you can install custom <strong>QuickLook</strong> plugins?).</p>
+
+<p>Select what you want to uninstall and <strong>AppCleaner</strong> will find all the related files spread throughout the system.  </p>
+
+<h2></h2>  
+
+<h2>Keep your Mac running</h2>  
+
+<p>Caffeine. It's what your computer needs if you don't want it to go to sleep when you leave it alone for a few minutes. Mac OS X has a nasty habit of turning off Wi-Fi connections when it goes to sleep, so <a href="http://lightheadsw.com/caffeine/"><strong>Caffeine</strong></a> helps prevent that without going into <strong>System Preferences</strong>.  </p>
+
+<h2></h2>  
+
+<h2>iMessages</h2>  
+
+<p>Did you know you can now use iMessages on your Mac? Regardless of whether or not you use the iMessage service on your iPhone or iPad, you can now use it from your Mac. You'll need to be upgraded to Lion, though I doubt many still hold on to Snow Leopard.</p>
+
+<p><a href="http://www.apple.com/macosx/mountain-lion/messages-beta/">Messages.app</a> is still in beta, and will require Mountain Lion, the upcoming OS X upgrade due for a Summer release, once it releases. But until then you can use it on Lion.  </p>
+
+<h2></h2>  
+
+<h2>Battery</h2>  
+
+<p>I hardly ever open Coconut Battery now, because I know my MBP's (that's the short version of MacBook Pro for you newbies) battery isn't what it used to be. If you're MacBook is still mint, you canuse <a href="http://www.coconut-flavour.com/">Coconut Battery</a> to gloat about the battery's health.  </p>
+
+<h2></h2>  
+
+<h2>Retrieving music from your iDevice</h2>  
+
+<p>So you have some music stored on your iPhone or iPad and want to unload it on your Mac. No problem, iTunes doesn't allow it, but there's other ways to do this. Check out <a href="http://www.headlightsoft.com/detune/">Detune</a>.  </p>
+
+<h2></h2>  
+
+<h2>Hex editing</h2>  
+
+<p>Not an everyday need for everyone, but imagine you need to edit a file in hexadecimal for some reason? Maybe to hack a feature or something else. There's plenty of apps that do this, but <a href="http://ridiculousfish.com/hexfiend/">Hex Fiend</a> is definitely the cleanest.  </p>
+
+<h2></h2>  
+
+<h2>Performance and Cleaning</h2>  
+
+<p>There's only one app that you need to keep your Mac in shape, and no, it's not that blasted MacKeeper (that app will install hidden startup items, so don't even think about it). <a href="http://www.titanium.free.fr/download.php?sid=1692c1eb6d29d43097f3baa37bd5dd1e">OnyX</a> is the tool of choice, just do all of the various steps, S.M.A.R.T. drive checking, etc... It'll help!  </p>
+
+<h2></h2>  
+
+<h2>Torrents</h2>  
+
+<p>For downloading .torrent files, there's a choice between <a href="http://www.utorrent.com/">uTorrent</a> and <a href="http://www.transmissionbt.com/">Transmission</a>. I use the latter, seems cleaner and slimmer.  </p>
+
+<h3><em><strong>Expert's Tip</strong></em></h3>  
+
+<p>If you really want to go under the hood of your Mac, download <strong><a href="http://secrets.blacktree.com/">Secrets</a></strong>. This will install a Preference Pane on your System Preferences allowing you to toggle a bunch of hidden features, like Thumbnail icons for folders.</p>]]></content:encoded></item><item><title><![CDATA[IOKit: An Introduction]]></title><description><![CDATA[<p><strong>Note</strong>: I originally wrote this post for <a href="http://www.ios-blog.co.uk/tutorials/iokit-an-introduction/">iOS-blog</a>.</p>
+
+<p><strong>IOKit</strong> is one of iOS's private frameworks, and is used to access hardware and device capabilities.</p>
+
+<p><strong>WARNING</strong>: since this is a private framework, if you submit an app to the App Store that links to this framework, it will be rejected.</p>
+
+<p>That</p>]]></description><link>https://solivagant.github.io/2012/01/26/iokit-an-introduction/</link><guid isPermaLink="false">77c21138-a99f-4981-a696-509653dbc1e6</guid><category><![CDATA[tutorial]]></category><dc:creator><![CDATA[Geraldo Nascimento]]></dc:creator><pubDate>Thu, 26 Jan 2012 11:13:00 GMT</pubDate><media:content url="https://solivagant.github.io/content/images/2016/05/og.jpg" medium="image"/><content:encoded><![CDATA[<img src="https://solivagant.github.io/content/images/2016/05/og.jpg" alt="IOKit: An Introduction"><p><strong>Note</strong>: I originally wrote this post for <a href="http://www.ios-blog.co.uk/tutorials/iokit-an-introduction/">iOS-blog</a>.</p>
+
+<p><strong>IOKit</strong> is one of iOS's private frameworks, and is used to access hardware and device capabilities.</p>
+
+<p><strong>WARNING</strong>: since this is a private framework, if you submit an app to the App Store that links to this framework, it will be rejected.</p>
+
+<p>That said, let's start by creating a new Xcode Project. You can pick any of the predefined templates.</p>
+
+<p>Once that is done, access the <strong>Project Settings</strong>, then select the <strong>Target</strong>. Go to <strong>Build Phases</strong>, then the <strong>Link Binary With Libraries</strong> section.</p>
+
+<p>Press the + sign to link a library. From the list select libIOKit.dylib. This is the <strong>IOKit</strong> framework.</p>
+
+<p>Ok, so now we have a project linked to <strong>IOKit</strong>, we can finally use it to do all kinds of neat things!</p>
+
+<p>Not so fast. First we need the headers for <strong>IOKit</strong>, so we can tell what to import.</p>
+
+<p>At this stage, you would normally have to use tools like <strong><a href="http://www.codethecode.com/projects/class-dump/">class-dump</a></strong> or <strong><a href="http://otx.osxninja.com/">otx</a></strong> to obtain the headers from the framework. However, someone has already done the job, and you can get the IOKit headers <a href="https://github.com/kennytm/iphone-private-frameworks/tree/master/IOKit">here</a>.</p>
+
+<p>Download the zip of the project (or clone it if you know your way around git), then place the header files in a folder that you might use for other projects. I placed it in /Users/MyUser/Code/Headers.</p>
+
+<p>We must now tell Xcode where to find these files.</p>
+
+<p>Go to your target's <strong>Build Settings</strong>. In the search bar write "headers". In the results you'll see a section called <strong>Search Paths</strong>. Change <strong>"Always Search User Paths"</strong> to YES, and add the path where you placed your headers in <strong>"User Header Search Paths"</strong>. Make sure to put the folder that contains the <strong>IOKit</strong> folder, and not the <strong>IOKit</strong> folder itself.</p>
+
+<p><strong>IOKit</strong> imports a file not present in these headers, head <a href="http://www.opensource.apple.com/source/xnu/xnu-1456.1.26/libkern/libkern/OSTypes.h">here</a> to obtain it. Place it in a folder called libkern, inside the Headers folder that you created.</p>
+
+<p>Now that everything's in place, where is some actual <strong>IOKit</strong> code?</p>
+
+<p>In this <a href="http://iphonedevwiki.net/index.php/AppleISL29003">wiki</a> we see an example that uses <strong>IOKit</strong>, suggested by one of iOS blog's readers.</p>
+
+<p>This example attempts to detect the device's Ambient Light Sensor events and log them.</p>
+
+<p>While it's possible to compile it within the project we setup, running it on either an iPhone or iPad will crash on this line:  </p>
+
+<pre><code> CFArrayRef srvs = (CFArrayRef)IOHIDEventSystemCopyMatchingServices(system, dict, 0, 0, 0,0); </code></pre>
+
+<p>The <strong>IOHIDEventSystemCopyMatchingServices</strong> function fails and doesn't return a workable array. Perhaps one of our readers can help?</p>
+
+<p>Since I don't want to leave you hanging without an IOKit example, look <a href="https://github.com/erica/uidevice-extension">here</a> for <a href="http://ericasadun.com/">Erica Sadun's</a> UIDevice extensions, one of which uses IOKit.</p>
+
+<p>Grab the UIDevice-IOKitExtensions.h and UIDevice-IOKitExtensions.m files, copy them into your project and import the header file.</p>
+
+<p>Now on your ViewController you can simply call:  </p>
+
+<pre><code> [[UIDevice currentDevice] imei];
+ [[UIDevice currentDevice] backlightlevel];</code></pre>
+
+<p>These will get your device's IMEI and backlight level. Not as exciting as handling your device's light sensor events, but still interesting.</p>]]></content:encoded></item><item><title><![CDATA[An Interview with Annie VanderMeer Mitsoda]]></title><description><![CDATA[<p>I had the good fortune of interviewing game writer Annie VanderMeer Mitsoda. You may know her for her work in Neverwinter Nights 2 - Storm of Zehir, Alpha Protocol, both developed by Obsidian Entertainment. She recently cofounded indie outfit Double Bear Entertainment and created Dead State, a zombie role playing</p>]]></description><link>https://solivagant.github.io/2011/05/18/annie-vandermeer-mitsoda/</link><guid isPermaLink="false">70100b74-3779-4ed6-afe4-5abd64c7a0cd</guid><category><![CDATA[gamedev]]></category><dc:creator><![CDATA[Geraldo Nascimento]]></dc:creator><pubDate>Wed, 18 May 2011 10:04:00 GMT</pubDate><media:content url="https://solivagant.github.io/content/images/2016/05/PressKit_ss004.png" medium="image"/><content:encoded><![CDATA[<img src="https://solivagant.github.io/content/images/2016/05/PressKit_ss004.png" alt="An Interview with Annie VanderMeer Mitsoda"><p>I had the good fortune of interviewing game writer Annie VanderMeer Mitsoda. You may know her for her work in Neverwinter Nights 2 - Storm of Zehir, Alpha Protocol, both developed by Obsidian Entertainment. She recently cofounded indie outfit Double Bear Entertainment and created Dead State, a zombie role playing game.</p>
+
+<h1>  
+Tools  
+</h1>
+
+<p><strong>When you wrote for Obsidian, did you work with any sort of development tools? If so, which ones? And did you find them limiting your work? Or did you simply write a regular word document and sent it over to the programmers?</strong></p>
+
+<p>It depended on the project. For Alpha Protocol, Brian Mitsoda and I would talk about what a particular dialogue needed to accomplish, chart the basic flow out on a whiteboard, then write the actual conversation in a normal Word file. From there, I'd put it into a Word dialogue template specially-made  by our lead programmer, which could get run through a special program to transfer the lines into Unreal 3's Matinee format. For Neverwinter Nights 2: Storm of Zehir, everything was done in NWN2's toolset – the only things done outside of it were the actual in-depth coding and model creation. Designers basically hung out in the toolset constantly - it was pretty much our one-stop-shop for all the development items we needed.</p>
+
+<p>A quick note on tools: I've worked with several different types now, and I'd say that their suitability really depends on what the writer is trying to achieve. The NWN2 toolset's tree dialogue formatting was pretty easy to use, but Brian and I didn't really need very complicated tools when working on Alpha Protocol because the dialogue branching worked out in an entirely different way.</p>
+
+<p><strong>How do you organize a thick web of dialog consequences? I imagine that organizing all those stat checks and branching dialog trees must be nerve wracking.</strong></p>
+
+<p>Absolutely! Writing for RPGs with a extensive amount of player choice involves a lot of careful organization, which is one of those things that doesn't seem like a big deal until you really realize how massive an amount of text your average RPG deals with. One thing we did for AP - that I would recommend to anyone working on dialogue - is we charted out the direction the conversation would take ahead of time. Brian and I would meet up and talk about what each scene was about, what it was trying to achieve, and what the player would want to ask. From there, we distilled the direction of the dialogue into a node structure, and went from there. Tree dialogues - like in SoZ - had a structure that was way more difficult to work out ahead of time, but even jotted notes and charts on notebook paper helped me keep stuff in order.</p>
+
+<p>Aside from the scripting side of setting up dialogues (which I would recommend keeping track of via Excel - I carefully tracked the state of completion for every single dialogue in SoZ that way), I recommend sketching out bare-boned outlines, adding in interesting elements in a quick edit, and then actually attempting to do a solid first pass for readability. Once you've got that, try to take a longer view of what you're trying to do - the flow of the dialogue in the mission, the area, etc. - and run a second pass. Ideally, once you're on the third, you've got the tone of the entire game in mind.</p>
+
+<p><strong>Do you have any idea how your dialog is converted into the code and then read by the game? Did you mostly use NWN2's own toolset for Storm of Zehir?</strong></p>
+
+<p>For SoZ, it was only made using the toolset. For AP, it was via a template macro within Word that basically allowed the dialogue to run through our face modeling program (to get the lip-flap right), find and hook up the VO files, and basically put things into pre-made scenes for Matinee. That's about all I know, regrettably: I'm not familiar on the particulars of the conversion, especially for Unreal 3 - the macro was a necessity since the engine wasn't originally made for RPGs, and required some retooling for the game mechanics to work properly. The NWN2 toolset was built from the ground-up to make dialogues very easy to create , so that was a lot handier for making quick changes and check them out in the game.</p>
+
+<h1>Design Documentation</h1>  
+
+<p><strong>What do you think is important having in a design documentation?</strong></p>
+
+<p>That's tricky. I've dealt with multiple different methods of documentation, and while a couple years ago I would say I favored big aggregated Word documents, I've found consistently they're tricky to update piecemeal, and as they grow in size, they're more and more daunting to have to deal with. On Alpha Protocol, we used an amalgamated story document that contained story background, themes and goals, influences, both a general and a detailed overview of the action, a character list, and secondary themes and ideas... and the frickin' thing got to be over 80 pages!</p>
+
+<p>For Storm of Zehir, major documents that were key to the core of the game were kept far smaller, and weren't updated as frequently: I combined research and jotted-down thoughts with first-draft pre-production concepts to create a master story doc that was my sole responsibility to update, but was shared with the team. Beyond that, there was a master document for each of the major systems introduced or revised, and for each area of the game, the designer responsible for it would write up a Module Document covering the basics of the area - from story to gameplay to art - and those would grow from a basic overview (5-8 pages) to a large master document (20-30 pages).</p>
+
+<p>Nowadays, I work with a wiki for both Guild Wars 2 and Dead State, and have found it to be the absolute best thing for documentation: it tracks revision history, links easily to other relevant topics, and is really easy to update. The world of Guild Wars in particular has a vast amount of history to it, and having each major topic have a dedicated page that links to minor ones is amazingly helpful for becoming swiftly familiar with previously unknown topics. And at home, working on the Dead State wiki makes it really easy for me to catch up on things Brian has worked on during the day, and keep myself up to date on any changes.</p>
+
+<p>I hope the tl;dr version of "put it on a wiki" doesn't seem like a cop-out, but seriously, if you're working without a source control solution (i.e. a program that saves various iterations of files and allows you to revert changes to previous versions), do not risk possible deletion or corruption of major documents if you can help it. If you have to deal with that, or you really don't like using a wiki, make sure you've got lots of dated backups (and include a section at the end of the document dating and detailing each change that was made to it) in case of a disaster. If you do have a wiki, just start with the big topics and branch out from there. If you can think of more than a paragraph or 2 subsections dealing with a subtopic, summarize it on the main page and create a new page dedicated to the topic, then link it back up to the main one. Don't go too crazy with the individual pages, but honestly, when it comes to a wiki page, it's often best to go many shorter pages than several really long ones.</p>
+
+<p><strong>How are influences planned? I'm talking about Mask of the Betrayer's and NWN2 influence system. I don't know if there is any of that in Storm of Zehir, or even if Alpha Protocol has something like that (perhaps the way you influence factions is comparable).</strong></p>
+
+<p>This is tricky for me, as I didn't get involved in the influence system for the NWN2 games. For AP, it waseasier, as the dialogues were more condensed, and usually just followed small iterations (either Boolean yes/no settings, or a small sequence of checks). So if a character liked being treated Professionally, a counter would note how many times you reacted to them that way, and have the NPC react more favorably to them. If major decisions happened within a dialogue, that key "either-or" decision was a variable that was tracked throughout the game.</p>
+
+<p>For the purposes of organizing influence checks, I'd say the first step is to set up a simple timeline (or tree, as the case may be) representing the action of the game, and put down major moments for an influence change as key points on that line. What levels of influence should characters have a reaction to - simple like/dislike, or a more nuanced kind of scale? If it's more nuanced, then numerically, what are a character's "breaking points" - when they either attack/leave because they hate the player, or they confess their eternal friendship/love? Where is the earliest point on the game's timeline for the player to hit each of these breaking points with each influenced character? Furthermore, are there points in the game's timeline that force decisions on the player that could really drastically alter a character's perception of the player character? Make-or-break moments like these up the tension in the game, but if they happened everywhere, they'd just end up being frustrating. Taking a very careful long view of the flow of the game helps to ensure that these moments are seeded throughout so they feel satisfying and natural, not random and confusing.</p>
+
+<p><strong>How was the innovative multicharacter Storm of Zehir dialog system designed?</strong></p>
+
+<p>The Party Conversation system was one of the ideas that took shape very early in development - pre-production, in fact, and prior to my involvement in the project - and one that pretty much cemented the intent of the game to be a title that didn't focus on continuing the story of the Knight-Captain from the Original Campaign and instead branched off in an entirely new direction. I recall very early on in NWN2's development that the dev team wanted to make the game feel more like an actual D&amp;D campaign, something that focused on a party instead of just a single character. NWN2's original campaign emphasized the mechanics of needing a party in combat, but didn't shape a sort of situation where a player felt like they "owned" the non-player characters in the same way as they did the one they created. Mask of the Betrayer veered further from this original path by making the plot a very personal story to the player character, and emphasizing the other characters as side players in this journey. Storm of Zehir was always intended to be a departure from the other two games, and that was a key feature of it.</p>
+
+<p>The design of the Party Conversation system was supposed to allow the player to develop the personalities within a full adventuring party in single-player, and allow people in a multiplayer format greater freedom to participate in joint conversations. One of the factors that we knew this would affect early on was that we had to cut out the cutscene-style conversations of NWN2 and MotB, while another was that it required a great deal more writing to properly implement, so that players saw enough variation in each conversation to not miss the aforementioned cutscene-style format. In practice, this led to me having to meet a kind of "diversity quota" with the amount of responses I had to write to each NPC line - how many lines were needed that would be reactive to stats, skills, classes, etc. The "by the numbers" approach made me a bit nervous at times that we were dictating personality by elements of a character sheet rather than letting it evolve in a more organic way (through alignment-changing decisions rather than alignment-reactive ones), and I did my best to make sure that there were appealing responses for people who didn't just want to make either a trait-based choice or a totally vanilla option.</p>
+
+<p>Here it is, the final part of this three part interview with Annie, from SoZ, Alpha Protocol, NWN2 and Dead State fame.  </p>
+
+<h1>Inspiration &amp; Craftmanship</h1>  
+
+<h3>What's the trick in keeping the inspirational mojo flowing?</h3>  
+
+<p>I wish I could lie and say that desperation and deadlines never play a role, but the truth is, having a milestone approaching at warp speed has at times turned my brain into Hypercreative Panic Mode, and somehow I pull through okay (and irritatingly enough, even though I can hardly remember writing some of the things I did while in that mode, often what I write is way better than my usual stuff...). On the whole, I can offer three solid chunks of advice on this:</p>
+
+<p><strong>ONE - write all the time, about anything</strong>. Doesn't matter if you'll never use it directly - often it helps to bring something else to fruition. I wrote a large backstory for Finch, one of SoZ's cohorts, and it never appears anywhere in the game: however, in doing so, I learned a little more about who he was as a person, and how that should appear when he interacts with others. Little bits of information like this can help not only round out a character for future use, but help you break through writing blocks and dead ends by giving you a solid foothold in the structure of their personality to back up to and reexamine.</p>
+
+<p>I should add that this step isn't just about characters and things you know you want to develop - even things that fall by the wayside can be reborn into alternate roles. Early drafts of SoZ's cohorts included a fire genasi called Reshoone - she didn't make the cut for the final cast, but what I'd developed of her sly, charming character was reborn into the tiefling merchant Vadin'ya, whom I ended up liking better anyway.</p>
+
+<p><strong>TWO - that which is good is never gone forever</strong>. I've seen people seethe about good ideas they had and then somehow lost before they wrote them down, and then they proceed to waste a ton of time vainly attempting to reproduce them. If you're stuck on something, stop banging your head against it - back up, move on to something else, and if what you had before was really worth keeping, it'll pull itself back up from the tar pit of your subconscious and start lumbering around again. Don't let yourself get frustrated. And even when you have good ideas moving along at a decent clip, sometimes a break is not only well-deserved, but the best thing to do to replenish your creative strength.</p>
+
+<p><strong>And that leads me to THREE - find what inspires you</strong>. Go actively out there and search for it, and keep it on tap for when you need a little kick in the pants. Find a situation that you think helps you, or somewhere you can think. Find out what works for you, and make it so.  </p>
+
+<h3>After creating hundreds of characters how do you still find inspiration in creating new and fresh  
+characters? In IGN's Alpha Protocol interview one of the designers mentioned you as the writer of the game's colorful and interesting villains.</h3>  
+
+<p>That's kind of them, but as much as I wish I could take credit for AP's characters, they all sprang from Brian Mitsoda, not I... well, except for one, a Russian information broker named Grigori. I originally conceived of him as the polar opposite of what one thought of as an "informant," which usually meant a thin and frightened little weasely guy. Instead, I saw Grigori as calm, unflappable, intelligent, and tremendously difficult to impress. I don't really know who Grigori changed in the second version of the game, but he - and all of Alpha Protocol's other characters that I was allowed to write - was a lot of fun to work on, and a challenge that I relished.</p>
+
+<p>In broader terms of what inspires me to create characters, I think I actually draw a lot of inspiration from stereotypes... not by deliberately defying them (which tends to draw a lot of attention back to the stereotype itself) but by examining where they came from, and unraveling them to find the far more complicated origin - that's where the meat is. Like Grigori, who is a reaction against the common stereotype of informant - he's a thought experiment of "well, what if that informant isn't a young guy, but a old dude who's been at this for decades? He'd hardly be a cringing little ferret, wouldn't he? You talk to this guy to find out about the Russian mob, for crying out loud, and he's obviously had to deal with KGB and international intelligence agents over the years - he's got to have learned how to keep his cool!" My favorite writers are those who toy with the player's conceptions of genre and their expectations of how a story will go - I want to do that with characters, and force a player to look past a character's face value and try to find out how they're put together.</p>
+
+<p>Another thing I tend to thrive on is culture, and how the character in question is supposed to react to it. World-building is something I'm kind of obsessed with, and creating characters is just an extension of this larger process. Also, I'm admittedly a poor artist, but ever since I was a kid, I'd sketch as I developed stories, and vice-versa: often a single strong image will push me to create a larger tale for what it is, and it'll snowball into larger and larger concepts as it goes along.  </p>
+
+<h3>Do you think it's important to players to see their character change through dialog options? For  
+example a more experienced character might be more calm in dire situations while a character who is new to adventuring be more immature and be more rash about his own actions.</h3>  
+
+<p>While I do agree that it's important, I do so with two reservations: one, that this change is being communicated correctly to the player, so they understand that their character is in fact changing, and two, that this change never feels like less options are available to them. This goes hand in hand with the expression of "don't write yourself into a corner," but it's adding another layer of complexity not only to the dialogue structure, but the systems within a game. I think a good rule of thumb is that dialogue should never be something that the player is scared to engage in, something where any given moment could screw up everything they'd been trying to build. This comes down to working very hard on establishing a level of meta-communication with the player: basically, that players understand the severity of any given situation particularly well, and decisions they make during it are deliberate. Often I've selected a dialogue choice in a game only to be startled and annoyed as to where it takes me - unexpected moments like this make it all the more critical that if a character is growing in the way we decide, that we are actually deciding that direction, instead of just hoping that we are... which reminds me again how passionate people seem to sometimes feel about dialogue skills in games. There's something comforting about numbers there, and the appeal of something we can grow. Communicating through numbers is simple! Getting that across purely through UI and dialogue itself is a great deal more difficult.</p>
+
+<p>That said - while I enjoy greatly feeling that my character is changing through the course of the game, and I as a player am directly advancing that change purely through the decisions I make, I don't imagine that any RPG has suffered in sales because of either that system's inclusion or removal. If you're going to do it - and again, I really like this system - please do it carefully! Take the time needed to communicate the depth of the player's decisions to them, so if they decide to be a super jerk, they feel they very consciously made that choice, and the game is reacting to it in kind.  </p>
+
+<h3>What do you think is a key component in a story, that will keep players moving forward?</h3>  
+
+<p>I think the key lies in establishing a personal investment with the player - solidly answering the "why should I care?" question, and following up on that with moments where the player feels like they've got a growing attachment to something in the game. Maybe this is a player character that has a massive web of dialogue options in most conversations, maybe it's a linear story that blends so well with the action of the game that the player feels that their efforts are truly needed to progress things, or maybe it's a landscape that beckons you to interact with it. Stories are vague and flexible things, and are so curious that instead of a blank slate scaring away people who want this investment, perhaps it's the very potential of this environment that draws them in.</p>
+
+<p>This answer almost feels like cheating - aside from "find a good gameplay hook and flesh the heck out of that sucka," establishing a personal investment in the player is one of the things a game needs to do. If my presence as a player in the game world doesn't make a difference, why should I bother playing? Establishing that personal investment can begin with something simple - the ability to design the look of a character, for example - but that connection is just planting the seed, and keeping it requires maintenance: new abilities, new choices, new challenges, higher scores, new characters, new knowledge. I'm not going to go totally up my own butt here with concepts about ludology and theories of play, but to me, games seem to be about beginning and maintaining a process of growth - this has a lot in common with traditional story structure, but has access to a lot more tools to keep that connection with the player even when the narrative has perhaps stalled a bit.</p>
+
+<p>I kind of enjoy this concept in operation as it appears in Persona 4: a mystery embroils the plot of the game, but there's still the day-to-day life of the player character, and the decisions they make about what to do with their time and who they want to hang out with. The plot itself isn't changing, but you're still invested in the world of the game - studying improves your Knowledge, talking to someone improves your relationship, and a little bit of grinding in the "dungeon" area grows your level. Conversely, while I was extremely curious about the complex plot of Breath of Fire V: Dragon Quarter, the fact that you actually had to restart the game multiple times to see that plot and help grow your character's skills left me with less and less of a sense of impact - I was seeing more of the story, but feeling increasingly detached from the world in which it existed.</p>
+
+<p>As a side note, I think that a sense of personal involvement in MMOs often runs into a number of issues that end up turning many people off from the genre. Seeing someone who might have a character that looks precisely like yours undergoing the exact same experience is something that can be entirely shattering to the other elements of that personal connection the game has been trying so hard to build, and the persistent nature of the worlds therein make it difficult for the player to leave a lasting impression of their personality on anything. Who they feel their character is either gets moved into the realm of the meta - an identity that one builds entirely independent of the game itself in order to prolong their interest in it - or persists in the purely physical, i.e. their phat loots. The former can actually enter into conflict with the story that the game itself is attempting to establish, while the latter can outpace the player seeking it with frustrating ease. Two years ago I was somewhat doubtful as to the ability of MMOs to break that pattern, but now I'm positive they're going to, and I'm tremendously excited to be a part of that.  </p>
+
+<h3>What games are good examples of good writing in your opinion?</h3>  
+
+<p>I really enjoyed Vampire the Masquerade: Bloodlines, Persona 3 and 4, Portal, Red Dead Redemption, and - despite its ridiculousness and tongue-in-cheek ultra-thug pastiche - I did very much enjoy Saints Row 2. In a more old-school vein, I still love Fallout, System Shock 2, and old LucasArts adventure games like Sam &amp; Max: Hit the Road and The Dig (and their descendant via Double Fine, Psychonauts). Overall, I appreciate humorous writing more than serious writing because I think it's much harder to get right: humor has to sound natural or the joke comes off as false, goofy, and flat.  </p>
+
+<h3>In your experience do you think players enjoy getting a reward or accomplishing something more meaningful inside the story?</h3>  
+
+<p>I hate to say it, but by and large, I think players want that reward - as a writer and a gamer myself I would want to experience the something meaningful, but as a designer and someone who knows the average gamer mentality, I know a lot of folks couldn't care less about the story and just want to go back to smacking stuff around. Even if RPGs really don't cater specifically to that gamer type, they do exist... and bear in mind as well that even story-loving players don't mind getting some cool loot now and then, even if their goal isn't the loot itself but the idea that it might have some influence on the rest of the game (RE: that "personal investment" stuff I mentioned).</p>
+
+<p>Ideally speaking, I think meaningful story elements and rewards work best when they're paired. Take Persona 4 for example: Social Links are connections with other people that are linked to a specific Tarot suit, which influence the types of Persona related to that suit. However, Social Links are advanced not through fighting, but through interacting with other characters who are associated with that Link. Advancing a friendship with another character and helping them out with their problems grows their connection with the main character - just as in real life - and that Social Link grows in strength. The interesting thing about the Persona series isn't just that it has some super rad creatures in it, but that your success in the game is directly connected to how much you go out of your way to interact with and care for other characters in the game. The game pushes you to care because of gameplay mechanics, sure - but it's well-written enough that you're motivated to pursue Social Links more because you want to see what happens with that relationship almost as much as getting that powerful new Persona. That is the kind of success with writing and game design that I think more titles should aspire to.  </p>
+
+<h3>What's important to have in mind when writing Quests?</h3>  
+
+<p>Not to sound too mercenary about this, but the key thing to have in mind is practicality. For example - while introducing an entirely new combat mechanic for a quest might be interesting, it's going to be tremendously difficult (if not impossible) to get finished, and players may well actually be upset that it discards the very systems that they've worked so hard to get good at. It's not about thinking small, it's about thinking ahead, and being aware of the strengths and weaknesses of the tools at your disposal. New systems need to be tested, then taught to the player, then (ideally) supported throughout the game. Knowing those needs ahead of time will save you a lot of frustration and scrambling later on, and allow you to figure out new and creative ways of using what you've got.</p>
+
+<p>Second to this is organization. It's easy to talk about the flow of quests in terms of ideas and vagaries, but actually sketching out ideas not only saves you a great deal of implementation time later, it lets you conceptualize a much greater structure for how quests intersect with one another. And - well - it lets you know at a glance how difficult it is to actually parse what the player should be doing at any given step of the quest, and how to avoid the confusing curse phrase of "designer logic" that can plague any complicated-but-well-intentioned quest idea.</p>
+
+<p>Once you know what your tools can do and what's necessary to get a quest functional, you can proceed on to those more "B Priority" issues that will elevate a quest from interesting into truly memorable.</p>
+
+<p><em>I'd like to thank Annie over at <a href="http://www.doublebearproductions.com/">DoubleBear</a> for this engrossing, exciting and incredibly awesome interview. Thanks!</em></p>]]></content:encoded></item></channel></rss>
